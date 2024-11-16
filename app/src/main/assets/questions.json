@@ -1,0 +1,364 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "easy",
+      "question": "Jak długo żyje większość żółwi domowych?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "5-10 lat",
+        "B": "20-30 lat",
+        "C": "1-5 lat",
+        "D": "10-15 lat"
+      }
+    },
+    {
+      "id": 2,
+      "category": "easy",
+      "question": "Co jedzą żółwie lądowe?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Mięso",
+        "B": "Kwiaty",
+        "C": "Warzywa i owoce",
+        "D": "Ryby"
+      }
+    },
+    {
+      "id": 3,
+      "category": "easy",
+      "question": "Jakiego typu środowisko preferują żółwie wodne?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Pustynne",
+        "B": "Leśne",
+        "C": "Górskie",
+        "D": "Wodne"
+      }
+    },
+    {
+      "id": 4,
+      "category": "easy",
+      "question": "Ile nóg mają żółwie?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Dwie",
+        "B": "Cztery",
+        "C": "Sześć",
+        "D": "Osiem"
+      }
+    },
+    {
+      "id": 5,
+      "category": "easy",
+      "question": "Jak szybko poruszają się żółwie lądowe?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Bardzo wolno",
+        "B": "Średnio",
+        "C": "Bardzo szybko",
+        "D": "Szybko"
+      }
+    },
+    {
+      "id": 6,
+      "category": "easy",
+      "question": "Jakie jest główne pożywienie żółwi wodnych?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Trawa",
+        "B": "Liście",
+        "C": "Ryby",
+        "D": "Insekty"
+      }
+    },
+    {
+      "id": 7,
+      "category": "easy",
+      "question": "Jak żółwie chronią się przed drapieżnikami?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Chowają się w skorupie",
+        "B": "Biegają szybko",
+        "C": "Skaczą",
+        "D": "Wydają głośne dźwięki"
+      }
+    },
+    {
+      "id": 8,
+      "category": "easy",
+      "question": "Gdzie żółwie mogą znaleźć wodę do picia?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "W powietrzu",
+        "B": "Na drzewach",
+        "C": "W zbiornikach wodnych",
+        "D": "Na pustyni"
+      }
+    },
+    {
+      "id": 9,
+      "category": "easy",
+      "question": "Czy żółwie mogą wstrzymać oddech pod wodą?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Nie",
+        "B": "Tylko kilka minut",
+        "C": "Nie dłużej niż 10 minut",
+        "D": "Tak, na długi czas"
+      }
+    },
+    {
+      "id": 10,
+      "category": "easy",
+      "question": "Jak duża jest większość dorosłych żółwi domowych?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "10-15 cm",
+        "B": "20-30 cm",
+        "C": "5-10 cm",
+        "D": "30-50 cm"
+      }
+    },
+    {
+      "id": 11,
+      "category": "normal",
+      "question": "Jak długo może żyć żółw galapagos?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "20-30 lat",
+        "B": "50-70 lat",
+        "C": "80-90 lat",
+        "D": "Ponad 100 lat"
+      }
+    },
+    {
+      "id": 12,
+      "category": "normal",
+      "question": "Jakie jest naturalne środowisko życia żółwia stepowego?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Dżungla",
+        "B": "Step",
+        "C": "Morze",
+        "D": "Góry"
+      }
+    },
+    {
+      "id": 13,
+      "category": "normal",
+      "question": "Ile razy w roku żółwie składają jaja?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Raz",
+        "B": "Dwa razy",
+        "C": "Cztery razy",
+        "D": "Sześć razy"
+      }
+    },
+    {
+      "id": 14,
+      "category": "normal",
+      "question": "Które żółwie są znane z długowieczności?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Żółwie galapagos",
+        "B": "Żółwie morskie",
+        "C": "Żółwie stepowe",
+        "D": "Żółwie błotne"
+      }
+    },
+    {
+      "id": 15,
+      "category": "normal",
+      "question": "Jaka jest największa prędkość, jaką może osiągnąć żółw?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "5 km/h",
+        "B": "10 km/h",
+        "C": "1 km/h",
+        "D": "0,5 km/h"
+      }
+    },
+    {
+      "id": 16,
+      "category": "normal",
+      "question": "Który żółw jest największy na świecie?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Żółw stepowy",
+        "B": "Żółw lądowy",
+        "C": "Żółw skórzasty",
+        "D": "Żółw błotny"
+      }
+    },
+    {
+      "id": 17,
+      "category": "normal",
+      "question": "Gdzie występuje żółw skórzasty?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "W oceanach",
+        "B": "Na pustyniach",
+        "C": "W dżungli",
+        "D": "Na stepach"
+      }
+    },
+    {
+      "id": 18,
+      "category": "normal",
+      "question": "Który organ żółwia pozwala mu na oddychanie pod wodą?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Serce",
+        "B": "Żołądek",
+        "C": "Płuca",
+        "D": "Skóra"
+      }
+    },
+    {
+      "id": 19,
+      "category": "normal",
+      "question": "Który z poniższych żółwi jest zagrożony wyginięciem?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Żółw stepowy",
+        "B": "Żółw galapagos",
+        "C": "Żółw lądowy",
+        "D": "Żółw skórzasty"
+      }
+    },
+    {
+      "id": 20,
+      "category": "normal",
+      "question": "Jakie jest typowe pożywienie żółwi morskich?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Trawa",
+        "B": "Owady",
+        "C": "Meduzy",
+        "D": "Liście"
+      }
+    },
+    {
+      "id": 21,
+      "category": "hard",
+      "question": "Ile gatunków żółwi istnieje na świecie?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "300",
+        "B": "500",
+        "C": "200",
+        "D": "356"
+      }
+    },
+    {
+      "id": 22,
+      "category": "hard",
+      "question": "Jaki jest średni czas inkubacji jaj żółwi morskich?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "60 dni",
+        "B": "30 dni",
+        "C": "100 dni",
+        "D": "40 dni"
+      }
+    },
+    {
+      "id": 23,
+      "category": "hard",
+      "question": "Jak nazywa się proces, w którym żółwie wędrują na plaże w celu złożenia jaj?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Migrowanie",
+        "B": "Hibernacja",
+        "C": "Nesting",
+        "D": "Zmiana siedliska"
+      }
+    },
+    {
+      "id": 24,
+      "category": "hard",
+      "question": "Jakiej temperatury wymaga inkubacja jaj żółwi?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "20-25°C",
+        "B": "27-32°C",
+        "C": "15-20°C",
+        "D": "10-15°C"
+      }
+    },
+    {
+      "id": 25,
+      "category": "hard",
+      "question": "Który gatunek żółwia jest największym mięsożercą?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Żółw galapagos",
+        "B": "Żółw stepowy",
+        "C": "Żółw skórzasty",
+        "D": "Żółw błotny"
+      }
+    },
+    {
+      "id": 26,
+      "category": "hard",
+      "question": "Jaka jest największa długość żółwia skórzastego?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "2,5 metra",
+        "B": "1,5 metra",
+        "C": "1 metr",
+        "D": "3 metry"
+      }
+    },
+    {
+      "id": 27,
+      "category": "hard",
+      "question": "Jaka jest maksymalna głębokość, na jaką mogą zanurzyć się żółwie morskie?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "100 metrów",
+        "B": "200 metrów",
+        "C": "500 metrów",
+        "D": "1000 metrów"
+      }
+    },
+    {
+      "id": 28,
+      "category": "hard",
+      "question": "Jak nazywa się stan, w którym żółwie wpadają w sen zimowy?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Hibernacja",
+        "B": "Migracja",
+        "C": "Aestivacja",
+        "D": "Odpoczynek"
+      }
+    },
+    {
+      "id": 29,
+      "category": "hard",
+      "question": "Który z żółwi ma skorupę pokrytą skórą, a nie łuskami?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Żółw lądowy",
+        "B": "Żółw galapagos",
+        "C": "Żółw skórzasty",
+        "D": "Żółw stepowy"
+      }
+    },
+    {
+      "id": 30,
+      "category": "hard",
+      "question": "Jaka jest średnia długość życia żółwia skórzastego?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "50 lat",
+        "B": "70 lat",
+        "C": "40 lat",
+        "D": "30 lat"
+      }
+    }
+  ]
+}

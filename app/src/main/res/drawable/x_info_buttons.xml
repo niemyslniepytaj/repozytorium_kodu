@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="40dp"
+        android:topRightRadius="40dp"
+        android:topLeftRadius="8dp"
+        android:bottomRightRadius="8dp" />   <!-- Promień zaokrąglenia -->
+    <gradient
+        android:startColor="@color/shadow_third"
+        android:centerColor="@color/primary_color"
+        android:endColor="@color/shadow_third" />
+</shape>

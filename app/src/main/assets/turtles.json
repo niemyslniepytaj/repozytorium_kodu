@@ -1,0 +1,234 @@
+{
+  "turtles": [
+    {
+      "name": "Żółw Stepowy",
+      "live": "L",
+      "care": {
+        "Karmienie": "Żółw stepowy preferuje dietę roślinną, składającą się głównie z liści, traw, ziół i kwiatów. Można podawać mu mniszka lekarskiego, babkę lancetowatą, koniczynę i inne rośliny o wysokiej zawartości błonnika. Ważne jest, aby unikać owoców i warzyw, które mogą powodować problemy trawienne.",
+        "Pielęgnacja skorupy": "Skorupa żółwia stepowego wymaga regularnego sprawdzania, szczególnie pod kątem pęknięć lub zmian chorobowych. Żółw ten nie wymaga specjalnych zabiegów, ale warto dbać o odpowiednią wilgotność i światło UVB, aby skorupa mogła prawidłowo się rozwijać.",
+        "Codzienna aktywność": "Żółw stepowy jest aktywny głównie w ciągu dnia, a jego naturalne środowisko to suche stepy. W warunkach domowych potrzebuje przestrzeni do spacerowania i kopania, co jest jego ulubioną aktywnością."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw stepowy powinien mieć przestronne terrarium, najlepiej z suchym podłożem, które pozwala mu kopać. Minimalne wymiary to 100x50 cm, a wysokość powinna umożliwiać swobodne przemieszczanie się.",
+        "Oświetlenie": "W terrarium powinno znajdować się światło UVB, które wspomaga syntezę witaminy D3, niezbędnej do prawidłowego rozwoju skorupy. Oświetlenie UVB powinno być włączone przez 10-12 godzin dziennie.",
+        "Ogrzewanie": "Optymalna temperatura w terrarium w ciągu dnia to około 30-35°C w strefie grzewczej, z możliwością schłodzenia do 20-25°C w pozostałej części. W nocy temperatura może spaść do około 15-20°C.",
+        "Podłoże": "Najlepszym podłożem dla żółwia stepowego jest mieszanka piasku i ziemi, która umożliwia kopanie. Ważne jest, aby podłoże było suche, aby zapobiec infekcjom.",
+        "Wilgotność": "Wilgotność w terrarium powinna być niska, na poziomie około 30-40%, co odpowiada naturalnym warunkom tego gatunku. W zbyt wilgotnym środowisku żółwie mogą mieć problemy zdrowotne."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółwie stepowe mogą cierpieć na infekcje bakteryjne skóry, zwłaszcza w wilgotnym środowisku. Objawiają się one zmianami skórnymi, a czasem także świądem i zaczerwienieniem.",
+        "Problemy ze skorupą": "Deformacje skorupy, takie jak jej zmiękczenie, mogą wynikać z niedoboru witaminy D3 i braku dostępu do odpowiedniego oświetlenia UVB.",
+        "Infekcje": "Infekcje układu oddechowego mogą pojawić się w zbyt wilgotnych lub zimnych warunkach. Objawami są trudności z oddychaniem, wydzielina z nosa i ospałość.",
+        "Problemy żywieniowe": "Niedobory wapnia, witaminy D3 lub nadmiar białka w diecie mogą prowadzić do problemów zdrowotnych, w tym do deformacji skorupy i problemów z układem trawiennym.",
+        "Pasożyty": "Żółwie stepowe mogą być nosicielami pasożytów wewnętrznych, takich jak nicienie. Regularne badanie kału i kontrola weterynaryjna są niezbędne do ich wykrycia i leczenia."
+      }
+    },
+    {
+      "name": "Żółw Grecki",
+      "live": "L",
+      "care": {
+        "Karmienie": "Żółw grecki jest roślinożerny, a jego dieta powinna składać się głównie z liści, kwiatów i ziół. Można podawać mniszek lekarski, babkę lancetowatą, lucernę oraz inne rośliny bogate w błonnik. Unikaj owoców, gdyż mogą powodować problemy trawienne.",
+        "Pielęgnacja skorupy": "Regularne nawilżanie skorupy jest ważne, aby zapobiec jej wysuszaniu. Żółw powinien mieć dostęp do wody, a także kąpieli, które pomogą utrzymać odpowiednią wilgotność i zdrowie skorupy.",
+        "Codzienna aktywność": "Żółw grecki to aktywne zwierzę, szczególnie w cieplejsze dni. Powinien mieć możliwość swobodnego przemieszczania się po wybiegu, gdzie może kopać i chować się pod różnymi strukturami. Aktywność pomaga utrzymać jego zdrowie fizyczne."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw grecki wymaga przestronnego terrarium z suchym podłożem, które imituje jego naturalne środowisko. Akwarium nie jest odpowiednie, ponieważ żółw ten nie jest gatunkiem wodnym.",
+        "Oświetlenie": "Terrarium powinno być wyposażone w lampy UVB, które pomagają żółwiowi w przyswajaniu witaminy D3, niezbędnej do prawidłowego rozwoju kości i skorupy. Oświetlenie powinno działać przez 10-12 godzin dziennie.",
+        "Ogrzewanie": "Żółwie greckie preferują ciepłe środowisko. W terrarium powinna być strefa grzewcza, gdzie temperatura wynosi około 30-35°C, a chłodniejszy obszar powinien mieć temperaturę około 20-25°C.",
+        "Podłoże": "Najlepszym podłożem dla żółwia greckiego jest mieszanka ziemi z piaskiem, co pozwala mu na naturalne kopanie. Podłoże powinno być suche, aby zapobiec problemom z wilgocią.",
+        "Wilgotność": "Żółw grecki preferuje stosunkowo niską wilgotność, najlepiej na poziomie 30-50%. Zbyt wysoka wilgotność może prowadzić do problemów ze zdrowiem, takich jak infekcje dróg oddechowych."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółw grecki może cierpieć na infekcje grzybicze skóry, które objawiają się plamami lub łuszczeniem. Regularne czyszczenie terrarium i odpowiednie nawilżenie pomagają zapobiegać takim problemom.",
+        "Problemy ze skorupą": "Niewłaściwa dieta lub brak odpowiedniego oświetlenia UVB mogą prowadzić do miękkości skorupy lub deformacji. Wczesne rozpoznanie i dostosowanie warunków może odwrócić te problemy.",
+        "Infekcje": "Infekcje dróg oddechowych są stosunkowo częste u żółwi greckich, szczególnie przy zbyt wysokiej wilgotności. Objawiają się świszczącym oddechem, wydzieliną z nosa lub ospałością.",
+        "Problemy żywieniowe": "Brak błonnika w diecie lub nadmiar owoców może prowadzić do zaparć lub biegunki. Kluczowe jest zbilansowanie diety bogatej w włókniste rośliny.",
+        "Pasożyty": "Żółwie mogą być nosicielami pasożytów wewnętrznych, takich jak nicienie. Regularne badania kału i profilaktyczne odrobaczanie pomagają zapobiegać problemom zdrowotnym."
+      }
+    },
+    {
+      "name": "Żółw Pustynny",
+      "live": "L",
+      "care": {
+        "Karmienie": "Żółw pustynny żywi się głównie roślinnością pustynną, taką jak trawy, kwiaty i kaktusy. Jego dieta powinna być bogata w błonnik i uboga w cukry oraz białko. Unikaj karmienia go owocami, które mogą powodować problemy trawienne.",
+        "Pielęgnacja skorupy": "Żółw pustynny wymaga suchego środowiska, co oznacza, że jego skorupa nie powinna być często nawilżana. Należy jednak zapewnić mu regularny dostęp do wody, co pozwala na właściwe nawodnienie organizmu.",
+        "Codzienna aktywność": "Ten gatunek jest najbardziej aktywny wczesnym rankiem i późnym popołudniem, kiedy temperatura na pustyni jest łagodniejsza. Potrzebuje przestrzeni do kopania i eksplorowania, co wspiera jego naturalne zachowania."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw pustynny wymaga dużego terrarium z suchym, piaszczystym podłożem. Powinno ono być dobrze wentylowane i mieć dużo miejsca do kopania. Akwarium nie jest odpowiednim wyborem dla tego gatunku.",
+        "Oświetlenie": "Ważne jest zapewnienie lampy UVB przez około 12 godzin dziennie, aby wspomóc syntezę witaminy D3. Naturalne światło słoneczne jest również korzystne, jeśli to możliwe.",
+        "Ogrzewanie": "Gatunek ten potrzebuje wysokich temperatur, około 30-35°C w strefie grzewczej. W nocy temperatura może spadać do 18-22°C, co imituje ich naturalne warunki.",
+        "Podłoże": "Suchy piasek zmieszany z ziemią jest idealny jako podłoże dla żółwia pustynnego. Powinien mieć możliwość kopania nor, co jest naturalnym zachowaniem w jego środowisku.",
+        "Wilgotność": "Niska wilgotność, na poziomie około 20-30%, jest kluczowa. Zbyt wilgotne środowisko może prowadzić do problemów zdrowotnych, takich jak infekcje dróg oddechowych."
+      },
+      "diseases": {
+        "Choroby skóry": "W suchym środowisku żółwie pustynne rzadko cierpią na problemy skórne, ale mogą być podatne na pękanie skóry, szczególnie wokół nóg, jeśli są odwodnione. Regularne kąpiele mogą temu zapobiec.",
+        "Problemy ze skorupą": "Zbyt niska podaż witaminy D3 lub wapnia może prowadzić do zmiękczenia skorupy, co z czasem prowadzi do jej deformacji. Utrzymanie odpowiedniego oświetlenia UVB jest kluczowe.",
+        "Infekcje": "Infekcje bakteryjne i grzybicze mogą pojawiać się w wyniku zbyt wilgotnych warunków w terrarium. Należy unikać zbyt częstych kąpieli i zapewnić suchą przestrzeń do życia.",
+        "Problemy żywieniowe": "Niewłaściwa dieta może prowadzić do problemów trawiennych, w tym zaparć lub biegunki. Upewnij się, że dieta jest bogata w błonnik i nie zawiera nadmiaru owoców.",
+        "Pasożyty": "Żółw pustynny może być nosicielem pasożytów wewnętrznych, takich jak nicienie. Regularne kontrole weterynaryjne i badania kału są zalecane."
+      }
+    },
+    {
+      "name": "Żółw Lamparci",
+      "live": "L",
+      "care": {
+        "Karmienie": "Żółw lamparci to roślinożerca, który preferuje trawy i liście. Jego dieta powinna być bogata w błonnik, a uboga w białko i tłuszcze. Zielone liście i kwiaty są idealne, a podawanie owoców powinno być ograniczone.",
+        "Pielęgnacja skorupy": "Skorupa żółwia lamparciego powinna być odpowiednio nawilżana poprzez regularne kąpiele, zwłaszcza w młodym wieku, aby zapobiec jej wysychaniu. Skorupa tego gatunku jest podatna na zniekształcenia, jeśli brakuje mu wapnia i witaminy D3.",
+        "Codzienna aktywność": "Żółw lamparci jest aktywny głównie w ciągu dnia. Potrzebuje dużej przestrzeni do swobodnego poruszania się, kopania i eksplorowania. W środowisku naturalnym potrafi pokonywać duże dystanse, więc wymaga dużo miejsca."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Ten gatunek wymaga przestronnego terrarium z suchym podłożem. Żółwie lamparcie nie pływają, dlatego akwarium nie jest dla nich odpowiednie. Potrzebują ciepłego i dobrze wentylowanego środowiska.",
+        "Oświetlenie": "Oświetlenie UVB powinno działać przez 10-12 godzin dziennie, aby żółw mógł syntezować witaminę D3. Światło słoneczne jest również korzystne, jeśli masz możliwość zapewnienia mu naturalnej ekspozycji.",
+        "Ogrzewanie": "Temperatura w terrarium powinna wynosić około 30-35°C w ciepłej strefie, z chłodniejszym obszarem o temperaturze 20-25°C. W nocy może być nieco chłodniej, ale nie niżej niż 18°C.",
+        "Podłoże": "Najlepszym podłożem jest mieszanka piasku i gleby, co pozwala na naturalne kopanie. Ważne, aby podłoże było suche, ponieważ ten gatunek preferuje bardziej suche środowiska.",
+        "Wilgotność": "Niska wilgotność, na poziomie 30-50%, jest idealna. Zbyt wysoka wilgotność może prowadzić do infekcji dróg oddechowych, zwłaszcza u młodych osobników."
+      },
+      "diseases": {
+        "Choroby skóry": "Podobnie jak inne gatunki, żółw lamparci może cierpieć na infekcje skórne w przypadku zbyt wilgotnego środowiska. Regularne czyszczenie terrarium i utrzymanie suchego podłoża są kluczowe.",
+        "Problemy ze skorupą": "Problemy ze skorupą, takie jak zmiękczenie lub deformacje, mogą wynikać z niedoboru wapnia lub witaminy D3. Odpowiednie oświetlenie UVB oraz zbilansowana dieta są niezbędne, aby zapobiec tym problemom.",
+        "Infekcje": "Zbyt wilgotne środowisko może sprzyjać infekcjom dróg oddechowych, co objawia się trudnościami w oddychaniu, wydzieliną z nosa i ospałością.",
+        "Problemy żywieniowe": "Nadmiar białka w diecie może prowadzić do deformacji skorupy oraz problemów nerkowych. Zadbaj o dietę bogatą w włókniste rośliny, z ograniczoną ilością owoców.",
+        "Pasożyty": "Pasożyty wewnętrzne, takie jak nicienie, mogą pojawiać się u żółwia lamparciego. Regularne badania weterynaryjne i odrobaczanie pomagają w utrzymaniu zdrowia."
+      }
+    },
+    {
+      "name": "Żółw Egipski",
+      "live": "L",
+      "care": {
+        "Karmienie": "Żółw egipski to roślinożerca, którego dieta powinna składać się głównie z traw, ziół i liści. W naturalnym środowisku żywi się skąpą roślinnością pustynną. Dieta bogata w błonnik jest kluczowa, a podawanie owoców powinno być zminimalizowane.",
+        "Pielęgnacja skorupy": "Żółw egipski wymaga rzadkiego nawilżania, ale dostęp do wody powinien być zapewniony, szczególnie w gorących miesiącach. Skorupa powinna pozostać sucha, aby zapobiec infekcjom grzybiczym.",
+        "Codzienna aktywność": "Jest to gatunek aktywny głównie rano i późnym popołudniem. Żółw egipski wymaga przestrzeni do kopania i schronienia się w cieniu, co jest zgodne z jego naturalnym zachowaniem w gorących klimatach."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw egipski wymaga dużego terrarium z suchym, piaszczystym podłożem. Ze względu na swoje małe rozmiary, nie potrzebuje ogromnej przestrzeni, ale terrarium powinno być dobrze wentylowane. Akwarium nie jest odpowiednie.",
+        "Oświetlenie": "Terrarium powinno być wyposażone w lampy UVB, aby żółw egipski mógł syntezować witaminę D3, niezbędną do zdrowego rozwoju kości i skorupy. Oświetlenie powinno działać przez 10-12 godzin dziennie, symulując naturalny cykl dnia i nocy.",
+        "Ogrzewanie": "Żółw egipski pochodzi z gorących, pustynnych terenów, dlatego wymaga temperatury w strefie grzewczej na poziomie 32-35°C. W nocy temperatura może spaść do 18-22°C, co odzwierciedla warunki panujące w jego naturalnym środowisku.",
+        "Podłoże": "Najlepszym podłożem dla żółwia egipskiego jest mieszanka piasku i suchej ziemi, co pozwala na naturalne kopanie i zapewnia odpowiednie warunki środowiskowe. Podłoże powinno być suche, aby zapobiec problemom zdrowotnym związanym z wilgocią.",
+        "Wilgotność": "Wilgotność w terrarium powinna być niska, na poziomie około 20-30%. Zbyt wysoka wilgotność może prowadzić do infekcji dróg oddechowych i problemów ze zdrowiem skóry, więc utrzymywanie suchego środowiska jest kluczowe."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółw egipski jest podatny na infekcje grzybicze, szczególnie w zbyt wilgotnym środowisku. Regularne kąpiele w wodzie oraz utrzymywanie czystego i suchego terrarium pomagają zapobiegać problemom skórnym.",
+        "Problemy ze skorupą": "Brak witaminy D3 lub wapnia w diecie żółwia egipskiego może prowadzić do zmiękczenia skorupy (metaboliczna choroba kości). Aby tego uniknąć, ważne jest, aby zapewnić mu odpowiednie oświetlenie UVB i dietę bogatą w wapń.",
+        "Infekcje": "Żółwie egipskie są podatne na infekcje dróg oddechowych, zwłaszcza gdy wilgotność w terrarium jest zbyt wysoka. Objawy infekcji obejmują wydzielinę z nosa i problemy z oddychaniem. W takim przypadku konieczna może być interwencja weterynaryjna.",
+        "Problemy żywieniowe": "Niewłaściwa dieta, np. nadmiar białka lub owoców, może prowadzić do zaburzeń trawiennych, takich jak biegunka czy zaparcia. Kluczowe jest utrzymanie diety bogatej w błonnik i niskobiałkowej, zgodnej z potrzebami roślinożercy.",
+        "Pasożyty": "Podobnie jak inne gatunki żółwi, żółw egipski może być narażony na pasożyty wewnętrzne. Regularne badania kału i profilaktyczne odrobaczanie mogą pomóc w utrzymaniu zdrowia żółwia."
+      }
+    },
+    {
+      "name": "Żółw Czerwonolicy",
+      "live": "W",
+      "care": {
+        "Karmienie": "Żółw czerwonolicy jest wszystkożerny, co oznacza, że w jego diecie powinny znaleźć się zarówno rośliny, jak i białko zwierzęce. Młode żółwie preferują pokarm mięsny, taki jak owady, dżdżownice i małe ryby, natomiast dorosłe osobniki bardziej skłaniają się ku roślinom wodnym. Należy podawać zróżnicowaną dietę, bogatą w witaminy i wapń, unikając nadmiernej ilości białka zwierzęcego.",
+        "Pielęgnacja skorupy": "Żółw czerwonolicy wymaga regularnych kąpieli i odpowiedniego dostępu do światła UVB, aby utrzymać zdrową skorupę. Należy także dbać o czystość wody w akwarium, aby zapobiegać infekcjom bakteryjnym, które mogą wpływać na kondycję skorupy.",
+        "Codzienna aktywność": "Żółw czerwonolicy jest aktywny w ciągu dnia, spędzając czas na pływaniu i wygrzewaniu się na lądzie. Potrzebuje miejsca do pływania oraz strefy lądowej, gdzie może wychodzić z wody i wygrzewać się pod lampą grzewczą."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw czerwonolicy najlepiej czuje się w akwarium, które musi być na tyle duże, aby pomieścić zarówno strefę wodną do pływania, jak i lądową do wygrzewania się. Woda powinna być filtrowana i regularnie wymieniana, aby utrzymać jej czystość.",
+        "Oświetlenie": "W akwarium konieczne jest zastosowanie lampy UVB, aby żółw mógł syntezować witaminę D3, co jest kluczowe dla zdrowia jego skorupy i kości. Lampa UVB powinna być włączona przez około 10-12 godzin dziennie.",
+        "Ogrzewanie": "Żółw czerwonolicy potrzebuje temperatury wody na poziomie 24-28°C, a temperatura na wyspie do wygrzewania powinna wynosić około 30-32°C. Utrzymanie odpowiedniej temperatury wody i powietrza jest kluczowe dla jego zdrowia i aktywności.",
+        "Podłoże": "Podłoże w akwarium powinno być łatwe do czyszczenia, najlepiej drobny żwirek lub piasek. Należy unikać zbyt drobnego podłoża, które żółw mógłby przypadkowo połknąć, co mogłoby prowadzić do problemów zdrowotnych.",
+        "Wilgotność": "Wilgotność w akwarium jest naturalnie wysoka dzięki obecności wody. Warto jednak zadbać o właściwą wentylację, aby zapobiec nadmiernej wilgotności powietrza, co mogłoby prowadzić do problemów zdrowotnych, takich jak infekcje dróg oddechowych."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółw czerwonolicy może cierpieć na infekcje skórne, zwłaszcza jeśli woda w akwarium jest zanieczyszczona. Regularna wymiana wody i odpowiednie filtrowanie pomagają zapobiegać chorobom skóry, takim jak grzybica.",
+        "Problemy ze skorupą": "Brak dostępu do światła UVB lub niewłaściwa dieta mogą prowadzić do osłabienia skorupy i rozwoju metabolicznej choroby kości (MBD). Warto monitorować kondycję skorupy i zapewnić żółwiowi odpowiednie warunki do wygrzewania się.",
+        "Infekcje": "Żółw czerwonolicy jest podatny na infekcje bakteryjne i grzybicze, zwłaszcza w zanieczyszczonej wodzie. Regularna konserwacja akwarium i utrzymanie odpowiedniej temperatury wody pomagają zminimalizować ryzyko infekcji.",
+        "Problemy żywieniowe": "Niewłaściwa dieta, zwłaszcza nadmiar białka zwierzęcego, może prowadzić do otyłości lub problemów z nerkami. Ważne jest utrzymanie zrównoważonej diety, bogatej w rośliny, wapń i witaminy.",
+        "Pasożyty": "Pasożyty zewnętrzne, takie jak kleszcze, mogą osiedlać się na żółwiu, zwłaszcza jeśli mieszka na zewnątrz. Pasożyty wewnętrzne, takie jak nicienie, mogą być przenoszone przez zanieczyszczoną wodę lub pokarm. Regularne badania weterynaryjne są zalecane."
+      }
+    },
+    {
+      "name": "Żółw Żółtolicy",
+      "live": "W",
+      "care": {
+        "Karmienie": "Żółw żółtolicy jest wszystkożerny, a jego dieta zmienia się wraz z wiekiem. Młode żółwie preferują pokarmy bogate w białko, takie jak małe ryby, krewetki i owady, podczas gdy starsze osobniki zaczynają jeść więcej roślin. Ich dieta powinna zawierać zróżnicowane składniki, w tym liście, wodne rośliny oraz pokarmy zwierzęce, aby zapewnić im odpowiednią ilość witamin i minerałów.",
+        "Pielęgnacja skorupy": "Zdrowa skorupa żółwia żółtolicego wymaga odpowiedniego dostępu do światła UVB oraz diety bogatej w wapń. Regularne kąpiele w czystej wodzie pomagają utrzymać skorupę w dobrej kondycji, a także zapobiegają jej wysuszeniu i pękaniu.",
+        "Codzienna aktywność": "Żółw żółtolicy jest bardzo aktywnym gatunkiem, który spędza czas na pływaniu i wygrzewaniu się. Potrzebuje miejsca do swobodnego poruszania się w wodzie oraz odpowiedniego obszaru lądowego, gdzie może wychodzić i wygrzewać się pod lampą grzewczą."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw żółtolicy najlepiej czuje się w dużym akwarium, w którym ma dostęp zarówno do wody, jak i do miejsca do wygrzewania się. Akwarium musi być wyposażone w filtrację, aby woda była czysta, oraz w wyspę z suchą strefą, gdzie żółw może się ogrzewać.",
+        "Oświetlenie": "Żółw żółtolicy wymaga lampy UVB, aby syntetyzować witaminę D3, co jest niezbędne dla zdrowia kości i skorupy. Oświetlenie powinno działać przez 10-12 godzin dziennie, symulując naturalny cykl dnia i nocy.",
+        "Ogrzewanie": "Temperatura wody w akwarium powinna wynosić 24-28°C, a temperatura w strefie do wygrzewania się powinna oscylować wokół 30-32°C. Utrzymywanie odpowiednich temperatur pomaga w zachowaniu zdrowia żółwia i jego aktywności.",
+        "Podłoże": "W akwarium najlepiej sprawdzi się drobny żwir lub piasek. Ważne jest, aby podłoże było łatwe do czyszczenia i nie stwarzało ryzyka połknięcia przez żółwia, co mogłoby prowadzić do problemów zdrowotnych.",
+        "Wilgotność": "Wilgotność w akwarium żółwia żółtolicego jest naturalnie wysoka, co wynika z obecności wody. Kluczowe jest jednak dbanie o dobrą wentylację, aby zapobiec nadmiernej wilgotności powietrza, która mogłaby prowadzić do infekcji dróg oddechowych."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółw żółtolicy może być podatny na infekcje bakteryjne i grzybicze, zwłaszcza w przypadku nieodpowiedniej higieny w akwarium. Czystość wody i regularna pielęgnacja zapobiegają powstawaniu problemów skórnych.",
+        "Problemy ze skorupą": "Brak światła UVB i niedobory wapnia w diecie mogą prowadzić do osłabienia skorupy, a nawet do jej deformacji. Dlatego tak ważne jest zapewnienie odpowiedniego oświetlenia i suplementacji wapnia.",
+        "Infekcje": "Żółwie żółtolice mogą cierpieć na infekcje bakteryjne, szczególnie jeśli woda w akwarium nie jest regularnie czyszczona. Objawy infekcji obejmują problemy z oddychaniem, wydzielinę z nosa i ospałość. Należy utrzymywać akwarium w czystości, aby zapobiec infekcjom.",
+        "Problemy żywieniowe": "Niewłaściwa dieta, zwłaszcza nadmiar pokarmu bogatego w białko zwierzęce, może prowadzić do problemów z nerkami i otyłości. Zrównoważona dieta roślinno-mięsna jest kluczowa dla zdrowia żółwia.",
+        "Pasożyty": "Podobnie jak inne gatunki żółwi, żółw żółtolicy może być narażony na pasożyty wewnętrzne, takie jak nicienie, które mogą pojawić się w wyniku spożycia zanieczyszczonego pokarmu lub wody. Regularne badania kału i profilaktyczne działania weterynaryjne są wskazane."
+      }
+    },
+    {
+      "name": "Żółw Żółtobrzuchy",
+      "live": "W",
+      "care": {
+        "Karmienie": "Żółw żółtobrzuchy jest wszystkożerny. Młode osobniki spożywają więcej pokarmu mięsnego, takiego jak owady, ślimaki czy małe ryby. Wraz z wiekiem dieta staje się bardziej roślinna – żółwie te zaczynają jeść liście, wodne rośliny, a także warzywa, np. sałatę rzymską czy mniszek lekarski. Dobrze zbilansowana dieta powinna także zawierać źródło wapnia, np. sepię.",
+        "Pielęgnacja skorupy": "Zdrowa skorupa żółwia żółtobrzuchego wymaga dostępu do promieni UVB, które pomagają w syntezie witaminy D3, kluczowej dla mocnych kości i zdrowej skorupy. Regularne wygrzewanie się na lądzie, a także kąpiele w czystej wodzie są istotne dla utrzymania jej w dobrym stanie.",
+        "Codzienna aktywność": "Żółw żółtobrzuchy jest aktywnym pływakiem i potrzebuje dużo przestrzeni do ruchu w wodzie. Dodatkowo ważne jest zapewnienie suchej platformy, na której będzie mógł się wygrzewać pod lampą grzewczą. Żółwie te spędzają sporo czasu na pływaniu, ale lubią też wygrzewać się na lądzie."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw żółtobrzuchy potrzebuje dużego akwarium z wydzieloną strefą lądową do wygrzewania. Akwarium powinno być wyposażone w skuteczny filtr, aby woda była czysta, a także lampę UVB i lampę grzewczą nad platformą do wygrzewania.",
+        "Oświetlenie": "Lampa UVB jest niezbędna dla żółwia żółtobrzuchego, aby mógł syntetyzować witaminę D3, co jest ważne dla zdrowia kości i skorupy. Oświetlenie powinno działać przez 10-12 godzin dziennie, symulując naturalny cykl dobowy.",
+        "Ogrzewanie": "Temperatura wody w akwarium powinna wynosić 24-28°C, a na platformie do wygrzewania się temperatura powinna być wyższa – około 30-32°C. Utrzymywanie odpowiedniej temperatury pomaga żółwiom zachować aktywność i zdrowie.",
+        "Podłoże": "W akwarium najlepiej sprawdzi się żwir lub drobny piasek. Ważne, aby podłoże było łatwe do czyszczenia i niezbyt drobne, aby żółw nie mógł go przypadkowo połknąć, co mogłoby prowadzić do problemów zdrowotnych.",
+        "Wilgotność": "Żółw żółtobrzuchy spędza większość czasu w wodzie, więc wilgotność nie jest zazwyczaj problemem, o ile zapewniona jest dobra wentylacja. Ważne jest utrzymanie czystości wody, aby uniknąć problemów zdrowotnych związanych z nadmiarem bakterii."
+      },
+      "diseases": {
+        "Choroby skóry": "Żółwie te mogą być podatne na infekcje skóry, jeśli woda w akwarium jest zanieczyszczona. Regularna wymiana wody i odpowiednie filtrowanie pomagają zapobiegać problemom skórnym, takim jak grzybica czy infekcje bakteryjne.",
+        "Problemy ze skorupą": "Brak dostępu do promieni UVB i niedobory wapnia mogą prowadzić do osłabienia skorupy, a nawet jej deformacji. Ważne jest zapewnienie żółwiowi odpowiedniej ilości wapnia w diecie i dostępu do światła UVB.",
+        "Infekcje": "Żółw żółtobrzuchy może być podatny na infekcje dróg oddechowych, szczególnie w warunkach nadmiernej wilgotności lub braku wentylacji. Objawy infekcji obejmują trudności w oddychaniu i wydzielinę z nosa, co wymaga interwencji weterynaryjnej.",
+        "Problemy żywieniowe": "Zbyt duża ilość pokarmu mięsnego w diecie może prowadzić do otyłości lub problemów z nerkami. Ważne jest, aby dieta była zrównoważona, z dużą ilością roślin i odpowiednią ilością białka.",
+        "Pasożyty": "Żółwie żółtobrzuche mogą być narażone na pasożyty wewnętrzne, które mogą przenikać do organizmu przez zanieczyszczoną wodę lub pokarm. Regularne kontrole weterynaryjne i utrzymywanie akwarium w czystości pomagają zminimalizować ryzyko pasożytów."
+      }
+    },
+    {
+      "name": "Żółw Chiński",
+      "live": "W",
+      "care": {
+        "Karmienie": "Żółw chiński jest wszystkożerny, a jego dieta składa się z owadów, małych ryb, ślimaków, roślin wodnych i warzyw. Młode żółwie preferują pokarm mięsny, natomiast dorosłe osobniki zaczynają zjadać więcej roślin. Ważne jest, aby dieta była zróżnicowana i bogata w wapń, co wspiera rozwój mocnej skorupy.",
+        "Pielęgnacja skorupy": "Aby zachować zdrową skorupę, żółw chiński potrzebuje diety bogatej w wapń oraz regularnego wygrzewania się pod lampą UVB. Odpowiednia suplementacja i dostęp do promieni słonecznych lub sztucznego światła pomagają w utrzymaniu mocnej i gładkiej skorupy.",
+        "Codzienna aktywność": "Żółwie chińskie są aktywne i uwielbiają pływać, dlatego potrzebują odpowiednio dużej przestrzeni wodnej w swoim środowisku. Oprócz pływania, żółwie te lubią również wygrzewać się na suchym lądzie."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw chiński wymaga dużego akwarium z czystą wodą oraz suchą strefą, gdzie może się wygrzewać. Akwarium powinno być wyposażone w efektywny filtr oraz odpowiednie oświetlenie UVB i lampę grzewczą.",
+        "Oświetlenie": "Lampa UVB jest konieczna, aby żółw chiński mógł syntezować witaminę D3, co jest ważne dla zdrowia kości i skorupy. Oświetlenie powinno działać przez około 10-12 godzin dziennie, imitując naturalny cykl światła.",
+        "Ogrzewanie": "Temperatura wody w akwarium powinna oscylować między 24 a 28°C, a w strefie do wygrzewania powinna wynosić około 30-32°C. Utrzymanie odpowiednich temperatur wspomaga zdrowie i aktywność żółwia.",
+        "Podłoże": "W akwarium najlepiej zastosować drobny żwir lub piasek, które łatwo utrzymać w czystości. Ważne, aby podłoże nie było na tyle drobne, aby żółw mógł je połknąć.",
+        "Wilgotność": "Wilgotność powietrza nie jest kluczowym problemem, gdy żółw spędza większość czasu w wodzie. Ważniejsze jest utrzymanie czystej wody i dobrej wentylacji, aby zapobiec infekcjom."
+      },
+      "diseases": {
+        "Choroby skóry": "Zanieczyszczona woda może prowadzić do infekcji skóry, dlatego ważne jest utrzymanie akwarium w czystości i regularna wymiana wody. Zapewnienie czystego środowiska zapobiega infekcjom bakteryjnym i grzybiczym.",
+        "Problemy ze skorupą": "Brak dostępu do światła UVB oraz niedobór wapnia mogą powodować zmiękczenie skorupy lub jej deformację. Regularne wygrzewanie oraz suplementacja diety są niezbędne dla zachowania zdrowej skorupy.",
+        "Infekcje": "Żółwie chińskie mogą być podatne na infekcje dróg oddechowych, szczególnie w przypadku zbyt wilgotnych warunków i niskich temperatur. Ważne jest utrzymywanie czystości oraz odpowiednie ogrzewanie.",
+        "Problemy żywieniowe": "Niewłaściwa dieta, zwłaszcza zbyt duża ilość białka, może prowadzić do problemów z nerkami lub otyłością. Ważne jest, aby dieta była zbilansowana, z dużą ilością pokarmów roślinnych.",
+        "Pasożyty": "Pasożyty wewnętrzne mogą stanowić problem, zwłaszcza jeśli żółw spożywa zanieczyszczone pokarmy. Regularne kontrole weterynaryjne oraz utrzymanie akwarium w czystości pomagają w zapobieganiu pasożytom."
+      }
+    },
+    {
+      "name": "Żółw Malowany",
+      "live": "W",
+      "care": {
+        "Karmienie": "Żółw malowany jest wszystkożerny, a jego dieta powinna być zróżnicowana i zawierać zarówno rośliny, jak i pokarmy zwierzęce. Młode osobniki preferują białko w postaci owadów, małych ryb i krewetek, natomiast dorosłe żółwie częściej jedzą pokarmy roślinne, takie jak liście sałaty, rośliny wodne i warzywa.",
+        "Pielęgnacja skorupy": "Zdrowa skorupa żółwia malowanego wymaga odpowiedniej diety bogatej w wapń oraz dostępu do promieni UVB. Światło UVB pomaga w syntezie witaminy D3, co jest kluczowe dla zdrowia kości i skorupy. Regularne wygrzewanie i dostęp do czystej wody są niezbędne dla zachowania zdrowej skorupy.",
+        "Codzienna aktywność": "Żółw malowany jest aktywnym pływakiem, który potrzebuje dużej przestrzeni wodnej do swobodnego ruchu. Ponadto wymaga suchego miejsca do wygrzewania się, co wspomaga jego metabolizm i zdrowie."
+      },
+      "environment": {
+        "Terrarium czy akwarium": "Żółw malowany potrzebuje akwarium z przestrzenią wodną oraz suchą wyspą do wygrzewania. Filtracja wody jest konieczna, aby utrzymać czystość w akwarium, a lampa UVB i grzewcza zapewnią odpowiednie warunki termiczne.",
+        "Oświetlenie": "Oświetlenie UVB jest niezbędne dla żółwia malowanego, aby zapewnić syntezę witaminy D3. Działa to korzystnie na zdrowie jego kości i skorupy. Lampa UVB powinna działać przez około 10-12 godzin dziennie.",
+        "Ogrzewanie": "Temperatura wody w akwarium powinna wynosić 24-28°C, a sucha strefa wygrzewania powinna mieć temperaturę około 30-32°C. Odpowiednie warunki cieplne są ważne dla aktywności i zdrowia żółwia.",
+        "Podłoże": "W akwarium dla żółwia malowanego najlepiej sprawdzi się drobny żwir lub piasek. Podłoże powinno być łatwe do czyszczenia i na tyle duże, aby nie mogło zostać połknięte przez żółwia.",
+        "Wilgotność": "Żółw malowany spędza dużo czasu w wodzie, więc wilgotność powietrza nie jest kluczowym problemem, pod warunkiem, że zapewniona jest odpowiednia wentylacja. Ważne jest również utrzymanie wody w czystości."
+      },
+      "diseases": {
+        "Choroby skóry": "Zanieczyszczona woda może prowadzić do problemów skórnych, takich jak infekcje bakteryjne lub grzybicze. Regularna wymiana wody i dbanie o higienę środowiska akwariowego minimalizują ryzyko wystąpienia problemów skórnych.",
+        "Problemy ze skorupą": "Brak dostępu do światła UVB oraz niedobory wapnia mogą powodować osłabienie lub deformację skorupy. Ważne jest, aby żółw miał dostęp do wyspy wygrzewania oraz diety bogatej w wapń.",
+        "Infekcje": "Infekcje dróg oddechowych są częstym problemem u żółwi malowanych, szczególnie w złych warunkach higienicznych lub przy braku odpowiedniego ogrzewania. Ważne jest zapewnienie czystości oraz właściwych warunków termicznych.",
+        "Problemy żywieniowe": "Niezbilansowana dieta, bogata w białko, może prowadzić do problemów z nerkami i otyłości. Ważne, aby dieta żółwia malowanego zawierała odpowiednie ilości pokarmów roślinnych i zwierzęcych.",
+        "Pasożyty": "Pasożyty wewnętrzne mogą stanowić zagrożenie, jeśli żółw spożywa zanieczyszczone pokarmy lub przebywa w brudnym środowisku. Regularne badania weterynaryjne i utrzymanie akwarium w czystości pomagają zapobiegać zakażeniom pasożytami."
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Zdefiniuj grubość dla stroke -->
+    <dimen name="avatar_stroke_width">8dp</dimen>
+    <dimen name="avatar_stroke_width_2">5dp</dimen>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">10sp</item> <!-- Zmień na dowolny rozmiar -->
+        <item name="android:autoSizeMaxTextSize">20sp</item>
+        <item name="android:autoSizeStepGranularity">1sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
+
+    <style name="DescriptionStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="SettingsHeaderStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:background">@drawable/x_header</item>
+
+    </style>
+
+    <style name="SmallHeaderStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:background">@drawable/x_header_small_left</item>
+
+    </style>
+
+    <style name="SmallHeaderStyle2" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/x_header_small_right</item>
+    </style>
+
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="AlertDialogStyle">
+        <item name="android:windowBackground">@drawable/x_dialog_header</item>
+        <item name="android:windowFullscreen">false</item>
+
+    </style>
+
+    <style name="HeaderQuiz">
+        <item name="android:background">@drawable/x_quiz_nav_all</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderQuiz2">
+        <item name="android:background">@drawable/x_quiz_stats</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderQuiz3">
+        <item name="android:background">@drawable/x_quiz_nav_right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderQuiz4">
+        <item name="android:background">@drawable/x_quiz_nav_left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="buttonquiz">
+        <item name="background">@drawable/x_quiz_answer_false</item>
+
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#60E6E0E9</item>
+        <item name="android:textAppearance">
+            @macro/m3_comp_time_picker_period_selector_label_text_type
+        </item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="turtle_ik">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSize">15dp</item> <!-- Rozmiar zaokrąglenia -->
+    </style>
+
+    <style name="turtle_avatar_activity">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSize">0dp</item> <!-- Rozmiar zaokrąglenia -->
+
+    </style>
+
+    <style name="settings_but_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TabLayout_style" parent="Widget.Design.TabLayout">
+        <!-- Kolor dla wybranego tab'a -->
+        <item name="tabIndicatorColor">@color/colorPrimary</item> <!-- Kolor podkreślenia -->
+
+        <!-- Wysokość podkreślenia -->
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabIndicatorAnimationDuration">1000</item>
+        <item name="itemTextAppearanceActiveBoldEnabled">true</item>
+        <item name="textAllCaps">false</item>
+        <!-- Kolor tekstu wybranego tab'a -->
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <!-- Kolor tekstu niewybranego tab'a -->
+        <item name="android:background">@drawable/x_info_tablayout</item>
+        <!-- Przeniesienie podkreślenia nad tekst -->
+        <item name="tabIndicatorGravity">top</item>
+    </style>
+
+</resources>

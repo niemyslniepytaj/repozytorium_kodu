@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Mój Żółw" />
+
+    <item
+        android:id="@+id/navigation_games"
+        android:icon="@drawable/baseline_videogame_asset_24"
+        android:title="Mini-gry" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Info-Żółw"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Ustawienia" />
+    <item
+        android:id="@+id/navigation_none"
+        android:visible="false"
+        android:enabled="false" />
+</menu>

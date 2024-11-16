@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Projekt3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+
+
+    </style>
+
+    <style name="Theme.Projekt3" parent="Base.Theme.Projekt3">
+        <item name="colorControlActivated">@color/shadow_third</item>
+        <item name="colorControlHighlight">@color/shadow_third</item>
+        <item name="checkedButton">@color/shadow_third</item>
+
+    </style>
+
+</resources>
