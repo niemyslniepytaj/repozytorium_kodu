@@ -164,7 +164,7 @@ open class Notifications : AppCompatActivity() {
                 val inputData = workDataOf(
                     "title" to randomData.first,
                     "message" to randomData.second,
-                    "channelID" to "house_cleaning_channel", // Kanał dla opcji 13
+                    "channelID" to "house_cleaning_channel", // Kanał dla opcji 1
                     "isPersistent" to true
                 )
                 scheduleWeeklyNotification(context, workManager, inputData)
