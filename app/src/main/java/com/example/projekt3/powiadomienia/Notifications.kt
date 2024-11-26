@@ -30,7 +30,9 @@ open class Notifications : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         db = DatabaseHelper(this)
-        createNotificationChannel()
+        createNotificationChannel("feeding_channel")
+        createNotificationChannel("cleaning_channel")
+        createNotificationChannel("house_cleaning_channel")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             checkNotificationPermission()
         }
@@ -42,7 +44,7 @@ open class Notifications : AppCompatActivity() {
         val powiadomienia = db.baza_pobierz("ustawienia", "powiadomienia")
         val powiadomienia1 = db.baza_pobierz("ustawienia", "powiadomienia1")
         val powiadomienia2 = db.baza_pobierz("ustawienia", "powiadomienia2")
-        val powiadomienia3 = db.baza_pobierz("ustawienia", "powiadomienia3")
+
 
 
 
@@ -55,8 +57,9 @@ open class Notifications : AppCompatActivity() {
     fun disableNotifications() {
         // Tutaj wstrzymaj wszystkie powiadomienia
         val workManager = WorkManager.getInstance(this)
-        workManager.cancelUniqueWork("notificationWork")
-        workManager.cancelUniqueWork("repeatingNotificationWork")
+        workManager.cancelUniqueWork("aWork")
+        workManager.cancelUniqueWork("bWork")
+        workManager.cancelUniqueWork("cWork")
         workManager.cancelAllWork()
     }
 
@@ -76,12 +79,12 @@ open class Notifications : AppCompatActivity() {
 
     // Tworzenie kanału powiadomień
     // Tworzenie kanału powiadomień dla Androida 8.0 i wyższych
-    private fun createNotificationChannel() {
+    private fun createNotificationChannel(channelID: String) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channelId = "my_channel_id"
+
             val channelName = "My Channel"
             val importance = NotificationManager.IMPORTANCE_HIGH
-            val channel = NotificationChannel(channelId, channelName, importance).apply {
+            val channel = NotificationChannel(channelID, channelName, importance).apply {
                 description = "Opis mojego kanału powiadomień"
             }
 
@@ -102,83 +105,73 @@ open class Notifications : AppCompatActivity() {
 // Harmonogram powiadomień w zależności od wybranej opcji
 
     fun scheduleNotifications(context: Context, option: Int, timeInHours: Int = 0) {
-
         val workManager = WorkManager.getInstance(context)
-        val inputData: Data
 
         when (option) {
-            // 1. Powiadomienia wyłączone
+            2, 3, 4 -> {
+                val titlesAndMessages = listOf(
+                    "Nakarm mnie!" to "Twój żółw jest głodny.",
+                    "Czas na obiad!" to "Twój żółw czeka na posiłek.",
+                    "Nie zapomnij o mnie!" to "Twój żółw prosi o jedzenie.",
+                    "Hej, głodny jestem!" to "Twój żółw ma pusty żołądek.",
+                    "Czas karmienia!" to "Twój żółw czeka na smakołyk.",
+                    "Pomóż mi, głód mnie dopadł!" to "Nakarm swojego żółwia już teraz.",
+                    "Czas na przekąskę!" to "Twój żółw prosi o jedzenie.",
+                    "Gdzie moje jedzenie?" to "Twój żółw jest głodny, zajmij się nim.",
+                    "Nie zapominaj o karmieniu!" to "Twój żółw czeka z utęsknieniem na posiłek.",
+                    "Czas uzupełnić energię!" to "Twój żółw potrzebuje jedzenia.",
+                    "Zadbaj o mnie!" to "Twój żółw prosi o posiłek.",
+                    "Posiłek czeka!" to "Twój żółw czeka na smaczny kąsek."
+                )
+                val randomData = titlesAndMessages.random()
 
-            // 2. Powiadomienia co 24 godziny (normalne)
-            92 -> {
-                inputData = workDataOf(
-                    "title" to "Twój żółw jest brudny!",
-                    "message" to "Umyj go zanim zacznie śmierdzieć :).",
-                    "isPersistent" to false
+                val inputData = workDataOf(
+                    "title" to randomData.first,
+                    "message" to randomData.second,
+                    "channelID" to "feeding_channel", // Kanał dla opcji 2, 3, 4
+                    "isPersistent" to (option != 2)
                 )
                 scheduleDailyNotification(context, workManager, inputData)
             }
 
-            93 -> {
-                inputData = workDataOf(
-                    "title" to "Twój żółw ma brudny domek",
-                    "message" to "Zajmij się nim, ty też czasem sprzątasz :).",
-                    "isPersistent" to false
+            13 -> {
+                val titlesAndMessages = listOf(
+                    "Czas na kąpiel!" to "Twój żółw potrzebuje czystej skorupy.",
+                    "Czysty żółw to szczęśliwy żółw!" to "Umyj swojego żółwia, by był zdrowy.",
+                    "Zadbaj o czystość skorupy!" to "Twój żółw wymaga kąpieli dla zdrowia.",
+                    "Nie zapomnij o czystości!" to "Twój żółw potrzebuje pielęgnacji."
                 )
-                scheduleDailyNotification(context, workManager, inputData)
-            }
+                val randomData = titlesAndMessages.random()
 
-            2 -> {
-                inputData = workDataOf(
-                    "title" to "Twój żółw jest już głodny!",
-                    "message" to "Nakarm go. Ty też nie lubisz głodować :).",
-                    "isPersistent" to false
-                )
-                scheduleDailyNotification(context, workManager, inputData)
-            }
-
-            // 3. Powiadomienia co 24 godziny (trwałe, wyłączane przyciskiem)
-            3 -> {
-                inputData = workDataOf(
-                    "title" to "Tylko nie głodówka!",
-                    "message" to "Wpadnij do aplikacji nakarmić swojego żółwia.",
+                val inputData = workDataOf(
+                    "title" to randomData.first,
+                    "message" to randomData.second,
+                    "channelID" to "cleaning_channel", // Kanał dla opcji 12
                     "isPersistent" to true
                 )
-                scheduleDailyNotification(context, workManager, inputData)
+                scheduleMonthlyNotification(context, workManager, inputData)
             }
 
-            // 4. Powiadomienia co 24 godziny, powtarzane co 15 minut, jeśli użytkownik nie zareaguje
-            4 -> {
-                inputData = workDataOf(
-                    "title" to "Hej, to ja twój żółw!",
-                    "message" to "Wpadnij do aplikacji mnie nakarmić, inaczej będę brzęczał do skutku.",
+            12 -> {
+                val titlesAndMessages = listOf(
+                    "Posprzątaj domek!" to "Twój żółw prosi o czysty dom.",
+                    "Porządki czas zacząć!" to "Twój żółw czeka na czystość w swoim domu.",
+                    "Utrzymaj domek w porządku!" to "Twój żółw prosi o posprzątanie.",
+                    "Czystość to zdrowie!" to "Twój żółw potrzebuje czystego domu."
+                )
+                val randomData = titlesAndMessages.random()
+
+                val inputData = workDataOf(
+                    "title" to randomData.first,
+                    "message" to randomData.second,
+                    "channelID" to "house_cleaning_channel", // Kanał dla opcji 13
                     "isPersistent" to true
                 )
-
-                // Oblicz opóźnienie dla pierwszego powiadomienia
-                val delayInMillis = calculateInitialDelay(
-                    sharedPreferences.getInt("notification_hour", 9),
-                    sharedPreferences.getInt("notification_minute", 0)
-                )
-
-                scheduleDailyNotification(context, workManager, inputData)
-
-                // Zaplanuj powiadomienia co 15 minut z opóźnieniem
-                val repeatInputData = workDataOf(
-                    "title" to "Powiadomienie z Ponowieniem",
-                    "message" to "Powiadomienie będzie się powtarzać co 15 minut, dopóki nie zareagujesz.",
-                    "isPersistent" to true
-                )
-                scheduleRepeatingNotification(
-                    context,
-                    workManager,
-                    repeatInputData,
-                    15,
-                    delayInMillis
-                )
+                scheduleWeeklyNotification(context, workManager, inputData)
             }
         }
     }
+
 
     // Funkcja planująca codzienne powiadomienia
     private fun scheduleDailyNotification(
@@ -200,32 +193,84 @@ open class Notifications : AppCompatActivity() {
             .build()
 
         workManager.enqueueUniquePeriodicWork(
-            "notificationWork",
+            "aWork",
             ExistingPeriodicWorkPolicy.REPLACE,
             workRequest
         )
     }
-
-    // Funkcja planująca powtarzające się powiadomienia co określoną ilość minut
-    private fun scheduleRepeatingNotification(
+    private fun scheduleWeeklyNotification(
         context: Context,
         workManager: WorkManager,
-        inputData: Data,
-        intervalMinutes: Long,
-        initialDelay: Long
+        inputData: Data
     ) {
-        val workRequest =
-            PeriodicWorkRequestBuilder<NotificationWorker>(intervalMinutes, TimeUnit.MINUTES)
-                .setInputData(inputData)
-                .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
-                .build()
+        // Odczytaj zapisaną godzinę z SharedPreferences
+        val hour = sharedPreferences.getInt("notification_hour", 9) // Domyślnie 9:00
+        var minute = sharedPreferences.getInt("notification_minute", 0) // Domyślnie 00 minut
+        minute+=1
+        // Oblicz opóźnienie dla pierwszego powiadomienia
+        val delayInMillis = calculateInitialDelay(hour, minute)
+
+        // Zlecenie pracy powiadomienia z codzienną powtarzalnością
+        val workRequest = PeriodicWorkRequestBuilder<NotificationWorker>(360, TimeUnit.HOURS)
+            .setInputData(inputData)
+            .setInitialDelay(delayInMillis, TimeUnit.MILLISECONDS)
+            .build()
 
         workManager.enqueueUniquePeriodicWork(
-            "repeatingNotificationWork",
+            "bWork",
             ExistingPeriodicWorkPolicy.REPLACE,
             workRequest
         )
     }
+    private fun scheduleMonthlyNotification(
+        context: Context,
+        workManager: WorkManager,
+        inputData: Data
+    ) {
+        // Odczytaj zapisaną godzinę z SharedPreferences
+        val hour = sharedPreferences.getInt("notification_hour", 9) // Domyślnie 9:00
+        var minute = sharedPreferences.getInt("notification_minute", 0) // Domyślnie 00 minut
+        minute+=2
+        // Oblicz opóźnienie dla pierwszego powiadomienia
+        val delayInMillis = calculateInitialDelay(hour, minute)
+
+        // Zlecenie pracy powiadomienia z codzienną powtarzalnością
+        val workRequest = PeriodicWorkRequestBuilder<NotificationWorker>(720, TimeUnit.HOURS)
+            .setInputData(inputData)
+            .setInitialDelay(delayInMillis, TimeUnit.MILLISECONDS)
+            .build()
+
+        workManager.enqueueUniquePeriodicWork(
+            "cWork",
+            ExistingPeriodicWorkPolicy.REPLACE,
+            workRequest
+        )
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Oblicza początkowe opóźnienie, aby powiadomienia wyświetlały się o wybranej godzinie
     private fun calculateInitialDelay(hour: Int, minute: Int): Long {

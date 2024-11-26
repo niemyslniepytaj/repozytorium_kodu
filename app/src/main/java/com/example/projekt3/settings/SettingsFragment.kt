@@ -32,7 +32,6 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         db = DatabaseHelper(requireContext())
         return inflater.inflate(R.layout.fragment_settings, container, false)
     }
@@ -102,8 +101,8 @@ class SettingsFragment : Fragment() {
         )
         description.text = db.baza_pobierz("ustawienia", "description")
 
-        powd_1.isChecked = (powd_1_status == "1")
-        powd_2.isChecked = (powd_2_status == "1")
+        powd_1.isChecked = (powd_1_status == "12")
+        powd_2.isChecked = (powd_2_status == "13")
         powd_3.isChecked = (powd_3_status == "1")
 
         when (powiadomienia_status) {
@@ -165,21 +164,15 @@ class SettingsFragment : Fragment() {
 
 
         powd_1.setOnClickListener {
-            db.baza_wstaw("ustawienia", "powiadomienia1", if (powd_1.isChecked) "93" else "-1")
+            db.baza_wstaw("ustawienia", "powiadomienia1", if (powd_1.isChecked) "12" else "-1")
         }
 
         powd_2.setOnClickListener {
-            db.baza_wstaw("ustawienia", "powiadomienia2", if (powd_2.isChecked) "92" else "-1")
-        }
-
-        powd_3.setOnClickListener {
-            db.baza_wstaw("ustawienia", "powiadomienia3", if (powd_3.isChecked) "1" else "-1")
+            db.baza_wstaw("ustawienia", "powiadomienia2", if (powd_2.isChecked) "13" else "-1")
         }
 
         buttonkarmienie.setOnClickListener {
-            // Otwórz TimePickerDialog po kliknięciu przycisku
             showTimePickerDialog(buttonkarmienie)
-
         }
         buttonnazwa.setOnClickListener {
             showInputDialog(buttonnazwa)
@@ -252,41 +245,11 @@ class SettingsFragment : Fragment() {
             val selectedOption = db.baza_pobierz("ustawienia", "powiadomienia")
             // Pytamy użytkownika, którą opcję powiadomienia wybrał (1-4)
 
-
-            // Sprawdź, którą opcję wybrał użytkownik i odpowiednio zaplanuj powiadomienie
-            when (selectedOption) {
-                "1" -> {
-                    // Powiadomienia wyłączone
-                    (activity as Notifications).scheduleNotifications(requireContext(), option = 1)
-                }
-
-                "2" -> {
-                    // Normalne powiadomienie o wybranej godzinie
-                    (activity as Notifications).scheduleNotifications(
-                        requireContext(),
-                        option = 2,
-                        timeInHours = timeInHours
-                    )
-                }
-
-                "3" -> {
-                    // Trwałe powiadomienie o wybranej godzinie
-                    (activity as Notifications).scheduleNotifications(
-                        requireContext(),
-                        option = 3,
-                        timeInHours = timeInHours
-                    )
-                }
-
-                "4" -> {
-                    // Powiadomienie z ponowieniem co 15 minut
-                    (activity as Notifications).scheduleNotifications(
-                        requireContext(),
-                        option = 4,
-                        timeInHours = timeInHours
-                    )
-                }
+            if (selectedOption != null) {
+                (activity as Notifications).scheduleNotifications(requireContext(), option = selectedOption.toInt(),timeInHours = timeInHours)
             }
+            // Sprawdź, którą opcję wybrał użytkownik i odpowiednio zaplanuj powiadomienie
+
         }, currentHour, currentMinute, true)
 
         timePickerDialog.show()

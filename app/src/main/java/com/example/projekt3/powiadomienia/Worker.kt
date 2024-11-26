@@ -19,13 +19,13 @@ class NotificationWorker(context: Context, workerParams: WorkerParameters) :
         val title = inputData.getString("title") ?: "Powiadomienie"
         val message = inputData.getString("message") ?: "Masz nowe powiadomienie"
         val isPersistent = inputData.getBoolean("isPersistent", false)
-
-        sendNotification(title, message, isPersistent)
+        val channel=inputData.getString("channelID")?:"my_channel_id"
+        sendNotification(title, message, isPersistent,channel)
         return Result.success()
     }
 
-    private fun sendNotification(title: String, message: String, isPersistent: Boolean) {
-        val channelId = "my_channel_id"
+    private fun sendNotification(title: String, message: String, isPersistent: Boolean,channel:String) {
+
 
         // Tworzenie intencji powiązanej z powiadomieniem
         val intent = Intent(applicationContext, MainFragment::class.java).apply {
@@ -37,10 +37,25 @@ class NotificationWorker(context: Context, workerParams: WorkerParameters) :
             intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
-
+        var id =0
+        var icon= R.drawable.twotone_notification_important_24
+        when(channel){
+            "feeding_channel"->{
+                id=1
+                icon=R.drawable.baseline_twotone_dinner_dining_24
+            }
+            "cleaning_channel"->{
+                id=2
+                icon=R.drawable.baseline_cleaning_services_24
+            }
+            "house_cleaning_channel"->{
+                id=3
+                icon=R.drawable.baseline_shower_30
+            }
+        }
         // Tworzenie powiadomienia
-        val notificationBuilder = NotificationCompat.Builder(applicationContext, channelId)
-            .setSmallIcon(R.drawable.baseline_twotone_dinner_dining_24)
+        val notificationBuilder = NotificationCompat.Builder(applicationContext, channel)
+            .setSmallIcon(icon)
             .setContentTitle(title)
             .setContentText(message)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -54,6 +69,6 @@ class NotificationWorker(context: Context, workerParams: WorkerParameters) :
         // Wyślij powiadomienie
         val notificationManager =
             applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.notify(1, notificationBuilder.build())
+        notificationManager.notify(id, notificationBuilder.build())
     }
 }
