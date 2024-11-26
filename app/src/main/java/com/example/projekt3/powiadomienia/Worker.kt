@@ -45,11 +45,11 @@ class NotificationWorker(context: Context, workerParams: WorkerParameters) :
                 icon=R.drawable.baseline_twotone_dinner_dining_24
             }
             "cleaning_channel"->{
-                id=2
+                id=3
                 icon=R.drawable.baseline_cleaning_services_24
             }
             "house_cleaning_channel"->{
-                id=3
+                id=2
                 icon=R.drawable.baseline_shower_30
             }
         }

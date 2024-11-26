@@ -289,12 +289,15 @@
                 android:layout_height="match_parent"
                 android:text="Przypominaj o higienie żółwia" />
 
-            <Switch
-                android:id="@+id/switch4"
-                style="@style/settings_but_text"
+            <TextView
+                android:id="@+id/description2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Wysyłaj ciekawostki" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Zmiana godziny, wyłączenia całkowicie powiadomień oraz wyłączenie/włączenie powiadomień dodatkowych spowodują zresetowanie odliczania do kolejnego powiadomienia dodatkowego"
+                android:textAlignment="viewStart"
+                android:textStyle="italic" />
 
             <View
                 android:id="@+id/divider10"

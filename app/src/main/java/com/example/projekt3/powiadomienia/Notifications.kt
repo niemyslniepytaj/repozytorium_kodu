@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
+import android.content.Context.NOTIFICATION_SERVICE
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -53,7 +54,29 @@ open class Notifications : AppCompatActivity() {
         powiadomienia2?.let { scheduleNotifications(this, it.toInt(), 336) }
 
     }
+    fun cancelA(){
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        notificationManager.cancel(1)
+    }
+    fun cancelB(){
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        notificationManager.cancel(2)
+    }
+    fun cancelC(){
+        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        notificationManager.cancel(3)
+    }
+    fun disablebNotifications() {
+        // Tutaj wstrzymaj wszystkie powiadomienia
+        val workManager = WorkManager.getInstance(this)
+        workManager.cancelUniqueWork("bWork")
+    }
+    fun disablecNotifications() {
+        // Tutaj wstrzymaj wszystkie powiadomienia
+        val workManager = WorkManager.getInstance(this)
+        workManager.cancelUniqueWork("cWork")
 
+    }
     fun disableNotifications() {
         // Tutaj wstrzymaj wszystkie powiadomienia
         val workManager = WorkManager.getInstance(this)
@@ -89,7 +112,7 @@ open class Notifications : AppCompatActivity() {
             }
 
             val notificationManager: NotificationManager =
-                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
         }
     }
@@ -206,7 +229,7 @@ open class Notifications : AppCompatActivity() {
         // Odczytaj zapisaną godzinę z SharedPreferences
         val hour = sharedPreferences.getInt("notification_hour", 9) // Domyślnie 9:00
         var minute = sharedPreferences.getInt("notification_minute", 0) // Domyślnie 00 minut
-        minute+=1
+        minute+=2
         // Oblicz opóźnienie dla pierwszego powiadomienia
         val delayInMillis = calculateInitialDelay(hour, minute)
 
@@ -230,7 +253,7 @@ open class Notifications : AppCompatActivity() {
         // Odczytaj zapisaną godzinę z SharedPreferences
         val hour = sharedPreferences.getInt("notification_hour", 9) // Domyślnie 9:00
         var minute = sharedPreferences.getInt("notification_minute", 0) // Domyślnie 00 minut
-        minute+=2
+        minute+=4
         // Oblicz opóźnienie dla pierwszego powiadomienia
         val delayInMillis = calculateInitialDelay(hour, minute)
 

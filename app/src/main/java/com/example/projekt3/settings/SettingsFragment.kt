@@ -61,7 +61,7 @@ class SettingsFragment : Fragment() {
 
         val powd_1 = view.findViewById<Switch>(R.id.switch2)
         val powd_2 = view.findViewById<Switch>(R.id.switch3)
-        val powd_3 = view.findViewById<Switch>(R.id.switch4)
+
 
 // ---------- Pobierz wartości z bazy i zaimplementuj w aktywności --------------------------------------------------------------------------------------------------------------------
 
@@ -103,7 +103,7 @@ class SettingsFragment : Fragment() {
 
         powd_1.isChecked = (powd_1_status == "12")
         powd_2.isChecked = (powd_2_status == "13")
-        powd_3.isChecked = (powd_3_status == "1")
+
 
         when (powiadomienia_status) {
             "1" -> {
@@ -113,7 +113,7 @@ class SettingsFragment : Fragment() {
                 radio4.isEnabled = false
                 powd_1.isEnabled = false
                 powd_2.isEnabled = false
-                powd_3.isEnabled = false
+
                 buttonkarmienie.isEnabled = false
                 buttonkarmienie.text = "Wyłączone"
             }
@@ -125,7 +125,7 @@ class SettingsFragment : Fragment() {
                 radio4.isEnabled = true
                 powd_1.isEnabled = true
                 powd_2.isEnabled = true
-                powd_3.isEnabled = true
+
                 buttonkarmienie.isEnabled = true
                 val selectedTime = db.baza_pobierz("turtle", "karmienie")
                 buttonkarmienie.text = selectedTime
@@ -141,7 +141,7 @@ class SettingsFragment : Fragment() {
                 radio4.isEnabled = false
                 powd_1.isEnabled = false
                 powd_2.isEnabled = false
-                powd_3.isEnabled = false
+
                 buttonkarmienie.isEnabled = false
                 buttonkarmienie.text = "Wyłączone"
                 description.text = "Powiadomienia i powiadomienia dodatkowe są wyłączone."
@@ -153,7 +153,7 @@ class SettingsFragment : Fragment() {
                 radio4.isEnabled = true
                 powd_1.isEnabled = true
                 powd_2.isEnabled = true
-                powd_3.isEnabled = true
+
                 buttonkarmienie.isEnabled = true
                 val selectedTime = db.baza_pobierz("turtle", "karmienie")
                 buttonkarmienie.text = selectedTime
@@ -165,10 +165,20 @@ class SettingsFragment : Fragment() {
 
         powd_1.setOnClickListener {
             db.baza_wstaw("ustawienia", "powiadomienia1", if (powd_1.isChecked) "12" else "-1")
+            if (powd_2.isChecked) {
+                (activity as Notifications).scheduleNotifications(requireContext(), 12, 720)
+            } else {
+                (activity as Notifications).disablebNotifications()
+            }
         }
 
         powd_2.setOnClickListener {
             db.baza_wstaw("ustawienia", "powiadomienia2", if (powd_2.isChecked) "13" else "-1")
+            if (powd_2.isChecked) {
+                (activity as Notifications).scheduleNotifications(requireContext(), 13, 720)
+            } else {
+                (activity as Notifications).disablecNotifications()
+            }
         }
 
         buttonkarmienie.setOnClickListener {
@@ -246,7 +256,7 @@ class SettingsFragment : Fragment() {
             // Pytamy użytkownika, którą opcję powiadomienia wybrał (1-4)
 
             if (selectedOption != null) {
-                (activity as Notifications).scheduleNotifications(requireContext(), option = selectedOption.toInt(),timeInHours = timeInHours)
+                (activity as Notifications).enableNotifications()
             }
             // Sprawdź, którą opcję wybrał użytkownik i odpowiednio zaplanuj powiadomienie
 

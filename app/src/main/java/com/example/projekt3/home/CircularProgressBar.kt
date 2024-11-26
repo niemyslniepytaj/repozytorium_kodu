@@ -9,11 +9,12 @@ import android.os.Looper
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
+import com.example.projekt3.powiadomienia.Notifications
 import kotlin.math.min
 
 class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
-    private var progress: Float = 100f // Początkowy postęp ustawiony na 100%
+    private var progress: Float = 0f // Początkowy postęp ustawiony na 100%
     private val paint: Paint = Paint().apply {
         style = Paint.Style.STROKE
         strokeWidth = 30f
@@ -21,7 +22,7 @@ class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context,
     }
 
     private val backgroundPaint: Paint = Paint().apply {
-        color = Color.GRAY
+        color = Color.TRANSPARENT
         style = Paint.Style.STROKE
         strokeWidth = 31f
         isAntiAlias = true
@@ -32,8 +33,8 @@ class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context,
     private val decreaseRunnable = object : Runnable {
         override fun run() {
 
-            setProgress(progress - 1) // Odejmowanie 1%
-            handler.postDelayed(this, 1000) // Uruchamianie co sekundę
+            setProgress(progress + 0.2f) // Odejmowanie 1%
+            handler.postDelayed(this, 10) // Uruchamianie co sekundę
 
         }
     }
@@ -69,8 +70,15 @@ class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context,
 
     // Ustawienie nowego postępu
     fun setProgress(newProgress: Float) {
-        progress = if (newProgress < 0) 0f else newProgress // Upewnij się, że nie jest poniżej 0
-        invalidate() // Odśwież widok
+        if (newProgress >= 100){
+
+
+            stopDecreasing()
+        } else{
+            progress = newProgress
+            invalidate() // Odśwież widok
+        } // Upewnij się, że nie jest poniżej 0
+
     }
 
     // Rozpoczynanie odejmowania 1% co sekundę
@@ -84,20 +92,20 @@ class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context,
     }
 
     // Obsługa kliknięć - dodawanie progresu o 25% przy kliknięciu
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        if (event.action == MotionEvent.ACTION_DOWN) {
-            if (progress >= 75) {
-                setProgress(100f)
-            } else if (progress < 0) {
-                setProgress(25f)
-            } else {
-                setProgress(progress + 25)
-            }
-
-            return true
-        }
-        return super.onTouchEvent(event)
-    }
+//    override fun onTouchEvent(event: MotionEvent): Boolean {
+//        if (event.action == MotionEvent.ACTION_DOWN) {
+//            if (progress >= 75) {
+//                setProgress(100f)
+//            } else if (progress < 0) {
+//                setProgress(25f)
+//            } else {
+//                setProgress(progress + 25)
+//            }
+//
+//            return true
+//        }
+//        return super.onTouchEvent(event)
+//    }
 
     // Obsługa wrap_content
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
