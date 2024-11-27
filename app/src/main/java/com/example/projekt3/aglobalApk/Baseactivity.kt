@@ -40,7 +40,9 @@ open class Baseactivity : Notifications() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.statusBarColor = ContextCompat.getColor(this, R.color.transparent)
+        applyTheme()
         setContentView(R.layout.activity_base)
+
 
 //        setSupportActionBar(toolbar)
 //        db.baza_wstaw("gry", "punkty2", "0")
@@ -242,6 +244,28 @@ open class Baseactivity : Notifications() {
             val index = polishChars.indexOf(char)
             if (index != -1) englishChars[index] else char
         }.joinToString("")
+    }
+    fun applyTheme() {
+        val sharedPreferences = getSharedPreferences("app_preferences", MODE_PRIVATE)
+        val selectedTheme = sharedPreferences.getString("selectedTheme", "A")
+
+        when (selectedTheme) {
+            "A" -> {
+                setTheme(R.style.Theme_A)
+            }
+            "B" -> {
+                setTheme(R.style.Theme_B)
+            }
+            "C" -> {
+                setTheme(R.style.Theme_C)
+            }
+            "D" -> {
+                setTheme(R.style.Theme_D)
+            }
+            "E" -> {
+                setTheme(R.style.Theme_E)
+            }
+        }
     }
 }
 

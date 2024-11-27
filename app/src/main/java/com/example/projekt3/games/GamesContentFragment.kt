@@ -190,22 +190,11 @@ class GamesContentFragment : Fragment() {
             }
 
             3 -> {
-                when (currentQuestionIndex) {
-                    0 -> currentValue = "2500"
-                    1 -> currentValue = "2500"
-                    2 -> currentValue = "2500"
-                    3 -> currentValue = "2500"
-                    4 -> currentValue = "2500"
-                    5 -> currentValue = "2500"
-                    6 -> currentValue = "2500"
-                    7 -> currentValue = "2500"
-                    8 -> currentValue = "2500"
-                    9 -> currentValue = "2500"
-                }
+                if (currentQuestionIndex in 0..9)  currentValue = "2500"
+
             }
         }
-        question_number.text =
-            (currentQuestionIndex + 1).toString() + "/" + questionsList.size.toString()
+        question_number.text = (currentQuestionIndex + 1).toString() + "/" + questionsList.size.toString()
         points_textview.text = currentValue
 
 
@@ -291,19 +280,13 @@ class GamesContentFragment : Fragment() {
         }
         if (givepoints && givepoints_normal) {
             when (game_type) {
-                1 -> points.text =
-                    (currentPoints.toString().toInt() + currentValue.toInt()).toString()
-
+                1 -> points.text =(currentPoints.toString().toInt() + currentValue.toInt()).toString()
                 2 -> points.text = currentValue.toInt().toString()
-
-
             }
-
         }
         if (next) {
             nextQuestion()
         }
-
     }
 
     fun nextQuestion() {
@@ -448,39 +431,31 @@ class GamesContentFragment : Fragment() {
 
                 // Zmiana koloru ProgressBar w zależności od postępu
                 when {
-                    progress > 50 -> {
-                        progressBar.progressDrawable.setColorFilter(
-                            Color.GREEN, android.graphics.PorterDuff.Mode.SRC_IN
-                        )
-                    }
+                    progress > 50 -> progressBar.progressDrawable.setColorFilter(Color.GREEN, android.graphics.PorterDuff.Mode.SRC_IN)
+                    progress > 25 -> progressBar.progressDrawable.setColorFilter(Color.YELLOW, android.graphics.PorterDuff.Mode.SRC_IN )
 
-                    progress > 25 -> {
-                        progressBar.progressDrawable.setColorFilter(
-                            Color.YELLOW, android.graphics.PorterDuff.Mode.SRC_IN
-                        )
+                    progress <=0 -> {
+                        stopCountdown()
+                        next = false
+                        givepoints = false
+                        buttonA.isEnabled = false
+                        buttonB.isEnabled = false
+                        buttonC.isEnabled = false
+                        buttonD.isEnabled = false
+                        checkAnswer(buttonA, "A")
+                        checkAnswer(buttonB, "B")
+                        checkAnswer(buttonC, "C")
+                        next = true
+                        checkAnswer(buttonD, "D")
+                        givepoints = true
                     }
-
                     else -> {
-                        progressBar.progressDrawable.setColorFilter(
-                            Color.RED, android.graphics.PorterDuff.Mode.SRC_IN
-                        )
+                        progressBar.progressDrawable.setColorFilter(Color.RED, android.graphics.PorterDuff.Mode.SRC_IN)
                     }
                 }
             }
 
             override fun onFinish() {
-                next = false
-                givepoints = false
-                buttonA.isEnabled = false
-                buttonB.isEnabled = false
-                buttonC.isEnabled = false
-                buttonD.isEnabled = false
-                checkAnswer(buttonA, "A")
-                checkAnswer(buttonB, "B")
-                checkAnswer(buttonC, "C")
-                next = true
-                checkAnswer(buttonD, "D")
-                givepoints = true
             }
         }
 

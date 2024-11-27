@@ -1,16 +1,52 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.Projekt3" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-
-
+    <style name="Base.Theme.Ciemny" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#035209</item>
     </style>
 
-    <style name="Theme.Projekt3" parent="Base.Theme.Projekt3">
-        <item name="colorControlActivated">@color/shadow_third</item>
-        <item name="colorControlHighlight">@color/shadow_third</item>
-        <item name="checkedButton">@color/shadow_third</item>
-
+    <style name="Theme.A" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/A_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/A_secondary_shadow</item>
+        <item name="checkedButton">@color/A_secondary_shadow</item>
+        <item name="colorPrimary">@color/A_primary</item>
+        <item name="colorOnPrimary">@color/A_primary_shadow</item>
+        <item name="colorSecondary">@color/A_secondary</item>
+        <item name="colorOnSecondary">@color/A_secondary_shadow</item>
     </style>
-
+    <style name="Theme.B" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/B_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/B_secondary_shadow</item>
+        <item name="checkedButton">@color/B_secondary_shadow</item>
+        <item name="colorPrimary">@color/B_primary</item>
+        <item name="colorOnPrimary">@color/B_primary_shadow</item>
+        <item name="colorSecondary">@color/B_secondary</item>
+        <item name="colorOnSecondary">@color/B_secondary_shadow</item>
+    </style>
+    <style name="Theme.C" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/C_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/C_secondary_shadow</item>
+        <item name="checkedButton">@color/C_secondary_shadow</item>
+        <item name="colorPrimary">@color/C_primary</item>
+        <item name="colorOnPrimary">@color/C_primary_shadow</item>
+        <item name="colorSecondary">@color/C_secondary</item>
+        <item name="colorOnSecondary">@color/C_secondary_shadow</item>
+    </style>
+    <style name="Theme.D" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/D_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/D_secondary_shadow</item>
+        <item name="checkedButton">@color/D_secondary_shadow</item>
+        <item name="colorPrimary">@color/D_primary</item>
+        <item name="colorOnPrimary">@color/D_primary_shadow</item>
+        <item name="colorSecondary">@color/D_secondary</item>
+        <item name="colorOnSecondary">@color/D_secondary_shadow</item>
+    </style>
+    <style name="Theme.E" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/E_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/E_secondary_shadow</item>
+        <item name="checkedButton">@color/E_secondary_shadow</item>
+        <item name="colorPrimary">@color/E_primary</item>
+        <item name="colorOnPrimary">@color/E_primary_shadow</item>
+        <item name="colorSecondary">@color/E_secondary</item>
+        <item name="colorOnSecondary">@color/E_secondary_shadow</item>
+    </style>
 </resources>

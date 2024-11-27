@@ -1,7 +1,5 @@
 package com.example.projekt3.home
 
-import android.app.NotificationManager
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,12 +10,10 @@ import android.view.animation.ScaleAnimation
 import android.view.animation.TranslateAnimation
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import com.example.projekt3.aglobalApk.Baseactivity
 import com.example.projekt3.aglobalApk.DatabaseHelper
 import com.example.projekt3.R
-import com.example.projekt3.aglobalApk.StartFragment
 import com.example.projekt3.powiadomienia.Notifications
 
 class MainFragment : Fragment() {
@@ -30,7 +26,6 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         db = DatabaseHelper(requireContext())
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
@@ -49,7 +44,6 @@ class MainFragment : Fragment() {
         val turtlemessage = view.findViewById<TextView>(R.id.textView20)
         val turtle = view.findViewById<ImageView>(R.id.imageView2)
         turtlemessage.visibility = View.INVISIBLE
-        // Opóźnienie dla uruchomienia animacji
 
 
         turtle.setOnClickListener {
@@ -57,8 +51,6 @@ class MainFragment : Fragment() {
             setMessage(turtlemessage,1)
         }
 
-
-        // Ustawienia komponentów
         circularProgressBar = view.findViewById(R.id.circularProgressBar)
         circularProgressBar2 = view.findViewById(R.id.circularProgressBar2)
         circularProgressBar3 = view.findViewById(R.id.circularProgressBar3)
@@ -84,52 +76,42 @@ class MainFragment : Fragment() {
             circularProgressBar2.startDecreasing()
             animateTextViewFromImageView(turtlemessage, turtle)
             setMessage(turtlemessage,4)
-
         }
-        // Rozpocznij animacje
-
     }
 
     fun animateTextViewFromImageView(textView: TextView, imageView: ImageView) {
-        // Ustawienie początkowych parametrów TextView (np. początkowy rozmiar)
-//        textView.scaleX = 0.01f
-//        textView.scaleY = 0.01f
-//
-        // Pozycje startowe i docelowe dla przesunięcia
+
         val imageViewCenterX = imageView.x + imageView.width / 2 - textView.width / 2
         val imageViewCenterY = imageView.y + imageView.height / 2 - textView.height / 2
         val textViewFinalX = textView.x
         val textViewFinalY = textView.y
 
-        // Tworzenie animacji skalowania
-        val scaleAnimation = ScaleAnimation(
-            0.0f, 1.0f,  // skalowanie od 0.01 do pełnej skali (1.0)
-            0.0f, 1.0f,  // skalowanie od 0.01 do pełnej skali (1.0)
-            Animation.RELATIVE_TO_SELF, 0.5f,  // skalowanie od środka (poziomo)
-            Animation.RELATIVE_TO_SELF, 0.5f   // skalowanie od środka (pionowo)
-        )
-        scaleAnimation.duration = 1000 // czas trwania animacji (ms)
 
-        // Tworzenie animacji przesunięcia
+        val scaleAnimation = ScaleAnimation(
+            0.0f, 1.0f,
+            0.0f, 1.0f,
+            Animation.RELATIVE_TO_SELF, 0.5f,
+            Animation.RELATIVE_TO_SELF, 0.5f
+        )
+        scaleAnimation.duration = 1000
+
         val translateAnimation = TranslateAnimation(
             Animation.ABSOLUTE, imageViewCenterX - textViewFinalX,
             Animation.ABSOLUTE, 0f,
             Animation.ABSOLUTE, imageViewCenterY - textViewFinalY,
             Animation.ABSOLUTE, 0f
         )
-        translateAnimation.duration = 500 // czas trwania animacji (ms)
+        translateAnimation.duration = 500
 
-        // Tworzenie zestawu animacji
         val animationSet = AnimationSet(true)
         animationSet.addAnimation(scaleAnimation)
         animationSet.addAnimation(translateAnimation)
 
-        // Uruchomienie animacji
         textView.startAnimation(animationSet)
         textView.visibility = View.VISIBLE
     }
 
-    fun setMessage(textView: TextView,a: Int) {
+    private fun setMessage(textView: TextView, a: Int) {
         textView.text = "Wyślij wiadomość."
         when (a) {
             1 -> {
@@ -229,7 +211,7 @@ class MainFragment : Fragment() {
                     6 -> "Mój dom lśni! Dzięki!"
                     7 -> "Sprzątaj szybciej, mam plany!"
                     8 -> "Uważaj na moje rzeczy!"
-                    9 -> "Gdzie moje ulubione miejsce?!"
+                    9 -> "Gdzie mój ulubiony kamień?!"
                     10 -> "Wow, jak w nowym domu!"
                     else -> {
                         "Nie znam tej liczby"
@@ -240,7 +222,7 @@ class MainFragment : Fragment() {
                     textView.text = when (liczba) {
                         1 -> "Bądź delikatny, proszę!"
                         2 -> "Szoruj, ale bez przesady!"
-                        3 -> "Czy to pachnie kwiatkami?"
+                        3 -> "Czy to szampon do włosów?"
                         4 -> "Woda jest za zimna!"
                         5 -> "Hej, gdzie moja szczotka?"
                         6 -> "Wow, czuję się luksusowo!"

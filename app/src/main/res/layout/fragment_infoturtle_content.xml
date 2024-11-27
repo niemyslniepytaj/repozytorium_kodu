@@ -102,5 +102,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:maxImageSize="30dp"
-        app:tint="@color/shadow_third" />
+        app:tint="?attr/colorOnSecondary" />
 </androidx.constraintlayout.widget.ConstraintLayout>

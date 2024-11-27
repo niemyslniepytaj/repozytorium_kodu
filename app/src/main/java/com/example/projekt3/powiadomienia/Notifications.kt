@@ -12,11 +12,13 @@ import android.preference.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat.applyTheme
 import androidx.work.Data
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
+import com.example.projekt3.aglobalApk.Baseactivity
 import com.example.projekt3.aglobalApk.DatabaseHelper
 import java.util.Calendar
 import java.util.concurrent.TimeUnit
@@ -34,6 +36,7 @@ open class Notifications : AppCompatActivity() {
         createNotificationChannel("feeding_channel")
         createNotificationChannel("cleaning_channel")
         createNotificationChannel("house_cleaning_channel")
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             checkNotificationPermission()
         }

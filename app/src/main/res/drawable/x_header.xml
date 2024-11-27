@@ -6,10 +6,10 @@
         android:bottomRightRadius="10dp" />
 
     <gradient
-        android:startColor="@color/shadow_color"
-        android:centerColor="@color/shadow_second"
-        android:endColor="@color/shadow_third" />
+        android:startColor="?attr/colorOnSecondary"
+        android:centerColor="?attr/colorOnPrimary"
+        android:endColor="?attr/colorOnSecondary" />
     <stroke
         android:width="5dp"
-        android:color="@color/shadow_third" />
+        android:color="?attr/colorSecondary" />
 </shape>

@@ -7,5 +7,5 @@
     <solid android:color="@color/black" />
     <stroke
         android:width="5dp"
-        android:color="@color/shadow_third" />
+        android:color="?attr/colorOnSecondary" />
 </shape>

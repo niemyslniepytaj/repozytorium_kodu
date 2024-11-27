@@ -130,6 +130,7 @@ class GamesFragment : Fragment() {
         val titleView = TextView(requireContext()).apply {
             text = gameTitle
             textSize = 24f
+            setTextColor(Color.BLACK)
             setBackgroundResource(R.drawable.x_dialog_header)
             setPadding(40, 40, 40, 40)
             gravity = Gravity.CENTER
@@ -148,7 +149,7 @@ class GamesFragment : Fragment() {
         val dialog = builder.create()
         dialog.setOnShowListener {
             val positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
-            positiveButton.setBackgroundColor(resources.getColor(R.color.green))
+            positiveButton.setBackgroundColor(resources.getColor(R.color.black))
             positiveButton.setTextColor(Color.WHITE) // Zmien kolor na pożądany
             dialog.window?.setBackgroundDrawableResource(R.drawable.x_dialog_body)
         }

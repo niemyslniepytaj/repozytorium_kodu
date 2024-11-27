@@ -292,6 +292,7 @@ class AvatarFragment : Fragment() {
         val titleView = TextView(requireContext()).apply {
             text = title
             textSize = 24f
+            setTextColor(Color.BLACK)
             setBackgroundResource(R.drawable.x_dialog_header)
             setPadding(40, 40, 40, 40)
             gravity = Gravity.CENTER

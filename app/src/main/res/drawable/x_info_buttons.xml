@@ -7,7 +7,7 @@
         android:topLeftRadius="8dp"
         android:bottomRightRadius="8dp" />   <!-- Promień zaokrąglenia -->
     <gradient
-        android:startColor="@color/shadow_third"
-        android:centerColor="@color/primary_color"
-        android:endColor="@color/shadow_third" />
+        android:startColor="?attr/colorOnSecondary"
+        android:centerColor="?attr/colorPrimary"
+        android:endColor="?attr/colorOnSecondary" />
 </shape>

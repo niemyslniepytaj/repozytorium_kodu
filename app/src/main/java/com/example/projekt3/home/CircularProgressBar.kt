@@ -76,38 +76,19 @@ class CircularProgressBar(context: Context, attrs: AttributeSet) : View(context,
             stopDecreasing()
         } else{
             progress = newProgress
-            invalidate() // Odśwież widok
-        } // Upewnij się, że nie jest poniżej 0
+            invalidate() 
+        }
 
     }
 
-    // Rozpoczynanie odejmowania 1% co sekundę
     fun startDecreasing() {
-        handler.post(decreaseRunnable) // Uruchom Runnable
+        handler.post(decreaseRunnable)
     }
 
-    // Zatrzymywanie odejmowania
     fun stopDecreasing() {
-        handler.removeCallbacks(decreaseRunnable) // Usuń Runnable z kolejki
+        handler.removeCallbacks(decreaseRunnable)
     }
 
-    // Obsługa kliknięć - dodawanie progresu o 25% przy kliknięciu
-//    override fun onTouchEvent(event: MotionEvent): Boolean {
-//        if (event.action == MotionEvent.ACTION_DOWN) {
-//            if (progress >= 75) {
-//                setProgress(100f)
-//            } else if (progress < 0) {
-//                setProgress(25f)
-//            } else {
-//                setProgress(progress + 25)
-//            }
-//
-//            return true
-//        }
-//        return super.onTouchEvent(event)
-//    }
-
-    // Obsługa wrap_content
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         val desiredSize = 300 // Domyślny minimalny rozmiar w px (możesz dostosować)
         val width = resolveSize(desiredSize, widthMeasureSpec)

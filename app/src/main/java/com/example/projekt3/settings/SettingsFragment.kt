@@ -2,6 +2,8 @@ package com.example.projekt3.settings
 
 import android.annotation.SuppressLint
 import android.app.TimePickerDialog
+import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -17,6 +19,7 @@ import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat.recreate
 import androidx.fragment.app.Fragment
 import com.example.projekt3.aglobalApk.Baseactivity
 import com.example.projekt3.aglobalApk.DatabaseHelper
@@ -41,7 +44,7 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         (activity as Baseactivity).setViewMode("Personalizacja")
-
+        db.baza_wstaw("ustawienia", "motyw","Zielony")
         val offpowiadomienia = view.findViewById<Switch>(R.id.switch1)
         val powiadomienia_status = db.baza_pobierz("ustawienia", "bbb")
 
@@ -58,7 +61,8 @@ class SettingsFragment : Fragment() {
 
         val description = view.findViewById<TextView>(R.id.description)
 
-
+        val buttonMotyw = view.findViewById<Button>(R.id.button90)
+        val buttonTekst = view.findViewById<Button>(R.id.button60)
         val powd_1 = view.findViewById<Switch>(R.id.switch2)
         val powd_2 = view.findViewById<Switch>(R.id.switch3)
 
@@ -77,10 +81,13 @@ class SettingsFragment : Fragment() {
 
         val powd_1_status = db.baza_pobierz("ustawienia", "powiadomienia1")
         val powd_2_status = db.baza_pobierz("ustawienia", "powiadomienia2")
-        val powd_3_status = db.baza_pobierz("ustawienia", "powiadomienia3")
+        if(db.baza_pobierz("ustawienia", "motyw")!=null){
+          buttonMotyw.text = db.baza_pobierz("ustawienia", "motyw")
+        }
 
-
-
+        buttonMotyw.setOnClickListener {
+            showMotywDialog(buttonMotyw)
+        }
 
         db.baza_wstaw("ustawienia", "current", "4")
 
@@ -274,6 +281,7 @@ class SettingsFragment : Fragment() {
         val titleView = TextView(requireContext()).apply {
             text = title
             textSize = 24f
+            setTextColor(Color.BLACK)
             setBackgroundResource(R.drawable.x_dialog_header)
             setPadding(40, 40, 40, 40)
             gravity = Gravity.CENTER
@@ -312,6 +320,7 @@ class SettingsFragment : Fragment() {
         val titleView = TextView(requireContext()).apply {
             text = "Wybierz swój gatunek"
             textSize = 24f
+            setTextColor(Color.BLACK)
             setBackgroundResource(R.drawable.x_dialog_header)
             setPadding(40, 40, 40, 40)
             gravity = Gravity.CENTER
@@ -337,6 +346,59 @@ class SettingsFragment : Fragment() {
         // Pokaż dialog
         dialog.show()
     }
+    fun showMotywDialog(button: Button) {
+        val titleView = TextView(requireContext()).apply {
+            text = "Wybierz motyw"
+            textSize = 24f
+            setTextColor(Color.BLACK)
+            setBackgroundResource(R.drawable.x_dialog_header)
+            setPadding(40, 40, 40, 40)
+            gravity = Gravity.CENTER
+            setTypeface(null, Typeface.BOLD)
+        }
+        val options = arrayOf("Zielony", "Fioletowy","Jasnoniebieski", "Pomarańczowy","Niebieski")
+        val dialog = AlertDialog.Builder(requireContext())
+            .setCustomTitle(titleView)
+            .setItems(options) { _, which ->
+                val selectedOption = options[which]
+                val sharedPreferences = requireContext().getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+                when (selectedOption) {
+                    "Zielony" -> {
+                        editor.putString("selectedTheme", "A")
+                    }
+                    "Fioletowy" -> {
+                        editor.putString("selectedTheme", "B")
+                    }
+                    "Jasnoniebieski" -> {
+                        editor.putString("selectedTheme", "C")
+                    }
+                    "Pomarańczowy" -> {
+                        editor.putString("selectedTheme", "D")
+                    }
+                    "Niebieski" -> {
+                        editor.putString("selectedTheme", "E")
+                    }
+                }
+                editor.apply()
+                db.baza_wstaw("ustawienia", "motyw", selectedOption)
+                (activity as Baseactivity).applyTheme()
+                (activity as Baseactivity).navigation.selectedItemId = R.id.navigation_home
 
+                button.text = selectedOption
+                requireActivity().recreate()
+            }
+            .setNegativeButton("Anuluj", null)
+            .create()
+
+
+        dialog.setOnShowListener {
+            val negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE)
+            negativeButton.setBackgroundColor(Color.BLACK)
+            negativeButton.setTextColor(Color.WHITE) // Zmien kolor na pożądany
+            dialog.window?.setBackgroundDrawableResource(R.drawable.x_dialog_body)
+        }
+        dialog.show()
+    }
 
 }
