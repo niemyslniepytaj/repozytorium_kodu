@@ -92,16 +92,19 @@
         android:padding="30dp"
         android:text="1. Ile nóg ma żółw?"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="51dp"
         android:layout_marginBottom="10dp"
         android:src="@drawable/z_quiz_1"
         app:layout_constraintBottom_toTopOf="@+id/divider22"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
         tools:layout_editor_absoluteX="56dp" />
 
     <ProgressBar
@@ -180,5 +183,12 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/progressBar"
         tools:layout_editor_absoluteX="1dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="791dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

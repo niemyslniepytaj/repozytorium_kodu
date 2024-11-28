@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="A_primary">#047700</color>
-    <color name="A_primary_shadow">#07CD00</color>
-    <color name="A_secondary">#029300</color>
-    <color name="A_secondary_shadow">#06AE00</color>
+    <color name="A_primary">#005701</color>
+    <color name="A_primary_shadow">#01CC06</color>
+    <color name="A_secondary">#008002</color>
+    <color name="A_secondary_shadow">#00A803</color>
 
 
-    <color name="B_primary">#67007A</color>
-    <color name="B_primary_shadow">#AC00CC</color>
-    <color name="B_secondary">#7D0094</color>
-    <color name="B_secondary_shadow">#9200AD</color>
+    <color name="B_primary">#640080</color>
+    <color name="B_primary_shadow">#C400FA</color>
+    <color name="B_secondary">#8400A8</color>
+    <color name="B_secondary_shadow">#A100CC</color>
 
-    <color name="C_primary">#67007A</color>
-    <color name="C_primary_shadow">#AC00CC</color>
-    <color name="C_secondary">#7D0094</color>
-    <color name="C_secondary_shadow">#9200AD</color>
+    <color name="C_primary">#007573</color>
+    <color name="C_primary_shadow">#00EBE7</color>
+    <color name="C_secondary">#009E9B</color>
+    <color name="C_secondary_shadow">#00C7C4</color>
 
-    <color name="D_primary">#67007A</color>
-    <color name="D_primary_shadow">#AC00CC</color>
-    <color name="D_secondary">#7D0094</color>
-    <color name="D_secondary_shadow">#9200AD</color>
+    <color name="D_primary">#753B00</color>
+    <color name="D_primary_shadow">#EB7500</color>
+    <color name="D_secondary">#9E4F00</color>
+    <color name="D_secondary_shadow">#C76400</color>
 
-    <color name="E_primary">#67007A</color>
-    <color name="E_primary_shadow">#AC00CC</color>
-    <color name="E_secondary">#7D0094</color>
-    <color name="E_secondary_shadow">#9200AD</color>
+    <color name="E_primary">#004680</color>
+    <color name="E_primary_shadow">#0089FA</color>
+    <color name="E_secondary">#005DA8</color>
+    <color name="E_secondary_shadow">#0070CC</color>
 
     <color name="red">#FF0000</color>
     <color name="czerwony">#FF1744</color>
@@ -36,7 +36,7 @@
     <color name="purple">#780AA0</color>
     <color name="orange">#F86402</color>
     <color name="pink">#F802EC</color>
-
+    <color name="green">#07CD00</color>
     <color name="transparent">#00F44336</color>
     <color name="half_transparent">#80000000</color>
 

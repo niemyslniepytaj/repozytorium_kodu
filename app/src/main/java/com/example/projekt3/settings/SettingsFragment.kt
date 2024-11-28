@@ -62,7 +62,7 @@ class SettingsFragment : Fragment() {
         val description = view.findViewById<TextView>(R.id.description)
 
         val buttonMotyw = view.findViewById<Button>(R.id.button90)
-        val buttonTekst = view.findViewById<Button>(R.id.button60)
+
         val powd_1 = view.findViewById<Switch>(R.id.switch2)
         val powd_2 = view.findViewById<Switch>(R.id.switch3)
 

@@ -96,7 +96,7 @@ class InfoturtleContentFragment : Fragment() {
         for (i in headers.indices) {
             val headerView = TextView(requireContext())
             headerView.text = headers[i]
-            headerView.textSize = 17f // Styl nagłówka
+            headerView.textSize = 18f // Styl nagłówka
             headerView.setPadding(16, 16, 0, 8) // Dodajemy margines
             headerView.setTypeface(null, Typeface.BOLD)
             val descriptionView = TextView(requireContext())
