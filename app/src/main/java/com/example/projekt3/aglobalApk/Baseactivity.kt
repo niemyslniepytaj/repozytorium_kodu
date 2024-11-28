@@ -1,9 +1,11 @@
 package com.example.projekt3.aglobalApk
 
 import android.annotation.SuppressLint
+import android.app.NotificationManager
 import android.content.Context
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.LayerDrawable
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -43,30 +45,32 @@ open class Baseactivity : Notifications() {
         applyTheme()
         setContentView(R.layout.activity_base)
 
+        val avatar = findViewById<ImageView>(R.id.avatar_image)
 
-//        setSupportActionBar(toolbar)
-//        db.baza_wstaw("gry", "punkty2", "0")
-//        db.baza_wstaw("gry", "level", "0")
-//        db.baza_wstaw("gry", "punktydolvl", "1000")
+        val avatar_background =
+            findViewById<ImageView>(R.id.avatar_background).background as? LayerDrawable
 
-        if(db.baza_pobierz("ustawienia", "firsttime") != "false") loadFragment(StartFragment()) else loadFragment(MainFragment())
+        if(db.baza_pobierz("ustawienia", "firsttime") != "false"){
+            loadFragment(StartFragment())
+        } else{
+            avatar.setOnClickListener {
+                loadFragment(AvatarFragment(), 2)
+            }
+            loadFragment(MainFragment())
+
+        }
 
 
         navigation.selectedItemId = R.id.navigation_home
 
 
-        val avatar = findViewById<ImageView>(R.id.avatar_image)
-        val avatar2=findViewById<ImageView>(R.id.avatar_background)
-        val avatar_background =
-            findViewById<ImageView>(R.id.avatar_background).background as? LayerDrawable
+
 
 
 
         setup_avatar(avatar, avatar_background)
 
-        avatar.setOnClickListener {
-            loadFragment(AvatarFragment(), 2)
-        }
+
         navigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> if(R.id.navigation_home !=navigation.selectedItemId) loadFragment(MainFragment())
@@ -99,8 +103,8 @@ open class Baseactivity : Notifications() {
     }
 
     fun updatePoints(points: String) {
-        val pointsupdate = db.baza_pobierz("gry", "punkty2").toString().toInt() + points.toInt()
-        db.baza_wstaw("gry", "punkty2", pointsupdate.toString())
+        val pointsupdate = db.baza_pobierz("gry", "punkty").toString().toInt() + points.toInt()
+        db.baza_wstaw("gry", "punkty", pointsupdate.toString())
         val levelThresholds = listOf(
             1000,
             4000,
@@ -265,6 +269,17 @@ open class Baseactivity : Notifications() {
             "E" -> {
                 setTheme(R.style.Theme_E)
             }
+        }
+    }
+    fun areNotificationsEnabled(context: Context): Boolean {
+        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            // Dla Androida 8.0 (API 26) i wyższych
+            notificationManager.areNotificationsEnabled()
+        } else {
+            // Dla starszych wersji Androida, zakładając, że zawsze są włączone
+            true
         }
     }
 }

@@ -1,11 +1,13 @@
 package com.example.projekt3.settings
 
 import android.annotation.SuppressLint
+import android.app.NotificationManager
 import android.app.TimePickerDialog
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.graphics.Color
 import android.graphics.Typeface
+import android.os.Build
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -46,7 +48,7 @@ class SettingsFragment : Fragment() {
         (activity as Baseactivity).setViewMode("Personalizacja")
         db.baza_wstaw("ustawienia", "motyw","Zielony")
         val offpowiadomienia = view.findViewById<Switch>(R.id.switch1)
-        val powiadomienia_status = db.baza_pobierz("ustawienia", "bbb")
+        val powiadomienia_status = db.baza_pobierz("ustawienia", "powiadomieniaonoff")
 
         val buttonnazwa = view.findViewById<Button>(R.id.button9)
         val buttongatunek = view.findViewById<Button>(R.id.button6)
@@ -120,7 +122,7 @@ class SettingsFragment : Fragment() {
                 radio4.isEnabled = false
                 powd_1.isEnabled = false
                 powd_2.isEnabled = false
-
+                description.text = "Powiadomienia i powiadomienia dodatkowe są wyłączone."
                 buttonkarmienie.isEnabled = false
                 buttonkarmienie.text = "Wyłączone"
             }
@@ -152,20 +154,27 @@ class SettingsFragment : Fragment() {
                 buttonkarmienie.isEnabled = false
                 buttonkarmienie.text = "Wyłączone"
                 description.text = "Powiadomienia i powiadomienia dodatkowe są wyłączone."
-                db.baza_wstaw("ustawienia", "bbb", "1")
+                db.baza_wstaw("ustawienia", "powiadomieniaonoff", "1")
             } else {
-                (activity as Notifications).enableNotifications()
-                radio2.isEnabled = true
-                radio3.isEnabled = true
-                radio4.isEnabled = true
-                powd_1.isEnabled = true
-                powd_2.isEnabled = true
+                if((activity as Baseactivity).areNotificationsEnabled(requireContext())){
+                    (activity as Notifications).enableNotifications()
+                    radio2.isEnabled = true
+                    radio3.isEnabled = true
+                    radio4.isEnabled = true
+                    powd_1.isEnabled = true
+                    powd_2.isEnabled = true
 
-                buttonkarmienie.isEnabled = true
-                val selectedTime = db.baza_pobierz("turtle", "karmienie")
-                buttonkarmienie.text = selectedTime
-                description.text = db.baza_pobierz("ustawienia", "description")
-                db.baza_wstaw("ustawienia", "bbb", "-1")
+                    buttonkarmienie.isEnabled = true
+                    val selectedTime = db.baza_pobierz("turtle", "karmienie")
+                    buttonkarmienie.text = selectedTime
+                    description.text = db.baza_pobierz("ustawienia", "description")
+                    db.baza_wstaw("ustawienia", "powiadomieniaonoff", "-1")
+                }else{
+                    db.baza_wstaw("ustawienia", "powiadomieniaonoff", "1")
+                    Toast.makeText(context, "Powiadomienia są wyłączone, włącz powiadomienia w ustawieniach telefonu", Toast.LENGTH_SHORT).show()
+                    offpowiadomienia.isChecked = true
+                }
+
             }
         }
 
