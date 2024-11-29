@@ -46,7 +46,7 @@ class SettingsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         (activity as Baseactivity).setViewMode("Personalizacja")
-        db.baza_wstaw("ustawienia", "motyw","Zielony")
+
         val offpowiadomienia = view.findViewById<Switch>(R.id.switch1)
         val powiadomienia_status = db.baza_pobierz("ustawienia", "powiadomieniaonoff")
 
@@ -83,9 +83,9 @@ class SettingsFragment : Fragment() {
 
         val powd_1_status = db.baza_pobierz("ustawienia", "powiadomienia1")
         val powd_2_status = db.baza_pobierz("ustawienia", "powiadomienia2")
-        if(db.baza_pobierz("ustawienia", "motyw")!=null){
-          buttonMotyw.text = db.baza_pobierz("ustawienia", "motyw")
-        }
+
+        buttonMotyw.text = db.baza_pobierz("ustawienia", "motyw")
+
 
         buttonMotyw.setOnClickListener {
             showMotywDialog(buttonMotyw)

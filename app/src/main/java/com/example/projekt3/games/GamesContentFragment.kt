@@ -228,13 +228,10 @@ class GamesContentFragment : Fragment() {
         selectedAnswer: String,
     ) {
         stopCountdown()
-        Log.d(
-            "checkAnswer",
-            "currentQuestionIndex: $currentQuestionIndex, correctAnswers.size: ${correctAnswers.size}"
-        )
 
 
-        Log.d("checkAnswer", "corerctAnswer: $correct")
+
+
         val currentPoints = points.text
 
         // Wyłącz przyciski po odpowiedzi

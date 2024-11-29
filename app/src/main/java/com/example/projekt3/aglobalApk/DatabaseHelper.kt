@@ -74,16 +74,16 @@ class DatabaseHelper(context: Context) :
 
         // Sprawdzenie, czy klucz już istnieje
         val existingValue = baza_pobierz(tableName, key)
-        Log.d("DatabaseHelper", "existing value: $existingValue")
+
         if (existingValue != null) {
             if ( existingValue.isNotEmpty() ) {
                 // Aktualizacja wartości, jeśli klucz istnieje
                 db.update(tableName, contentValues, "$COLUMN_KEY=?", arrayOf(key))
-                Log.d("DatabaseHelper", "update danych: $tableName, $key, $value")
+
             } else {
                 // Wstawienie nowej pary klucz-wartość
                 db.insert(tableName, null, contentValues)
-                Log.d("DatabaseHelper", "Wstawianie danych: $tableName, $key, $value")
+
             }
         }
     }
