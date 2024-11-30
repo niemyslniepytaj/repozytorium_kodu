@@ -122,6 +122,282 @@
     },
     {
       "id": 11,
+      "category": "easy",
+      "question": "Jaki kształt ma skorupa większości żółwi?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Kwadratowy",
+        "B": "Owalny",
+        "C": "Trójkątny",
+        "D": "Prostokątny"
+      }
+    },
+    {
+      "id": 12,
+      "category": "easy",
+      "question": "Co robi żółw, gdy czuje zagrożenie?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Chowa się w skorupie",
+        "B": "Uciekają na drzewo",
+        "C": "Atakują",
+        "D": "Znikają"
+      }
+    },
+    {
+      "id": 13,
+      "category": "easy",
+      "question": "Która część ciała żółwia jest chroniona przez skorupę?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Ogon",
+        "B": "Głowa",
+        "C": "Całe ciało",
+        "D": "Łapy"
+      }
+    },
+    {
+      "id": 14,
+      "category": "easy",
+      "question": "Czy żółwie potrafią pływać?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Nie",
+        "B": "Tak",
+        "C": "Tylko lądowe",
+        "D": "Tylko morskie"
+      }
+    },
+    {
+      "id": 15,
+      "category": "easy",
+      "question": "Jakiej wielkości są jaja żółwi?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Wielkości orzecha włoskiego",
+        "B": "Wielkości jabłka",
+        "C": "Wielkości piłeczki pingpongowej",
+        "D": "Wielkości pięści"
+      }
+    },
+    {
+      "id": 16,
+      "category": "easy",
+      "question": "Jakiej temperatury potrzebują żółwie do życia?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Poniżej 10°C",
+        "B": "Powyżej 40°C",
+        "C": "0-20°C",
+        "D": "20-30°C"
+      }
+    },
+    {
+      "id": 17,
+      "category": "easy",
+      "question": "Czy żółwie są roślinożerne?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Zawsze",
+        "B": "Nigdy",
+        "C": "Niektóre gatunki",
+        "D": "Tylko wodne"
+      }
+    },
+    {
+      "id": 18,
+      "category": "easy",
+      "question": "Jakiego typu łapy mają żółwie wodne?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Płetwowate",
+        "B": "Palczaste",
+        "C": "Chwytne",
+        "D": "Pokryte łuskami"
+      }
+    },
+    {
+      "id": 19,
+      "category": "easy",
+      "question": "Czy żółwie mają zęby?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Tak",
+        "B": "Nie",
+        "C": "Tylko niektóre",
+        "D": "Tak, ale bardzo małe"
+      }
+    },
+    {
+      "id": 20,
+      "category": "easy",
+      "question": "Jakiej długości mogą być najmniejsze żółwie?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "20 cm",
+        "B": "50 cm",
+        "C": "10 cm",
+        "D": "1 m"
+      }
+    },
+    {
+      "id": 21,
+      "category": "easy",
+      "question": "Czy żółwie są gadami?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Tak",
+        "B": "Nie",
+        "C": "Tylko niektóre",
+        "D": "Nie wiadomo"
+      }
+    },
+    {
+      "id": 22,
+      "category": "easy",
+      "question": "Jakiego koloru może być skorupa żółwia lądowego?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Niebieska",
+        "B": "Brązowa",
+        "C": "Czerwona",
+        "D": "Zielona"
+      }
+    },
+    {
+      "id": 23,
+      "category": "easy",
+      "question": "Czy żółwie mają zęby?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Tak",
+        "B": "Nie, ale mają dzioby",
+        "C": "Nie, ale mają ostre dzioby",
+        "D": "Nie wiadomo"
+      }
+    },
+    {
+      "id": 24,
+      "category": "easy",
+      "question": "Jak żółwie rozpoznają jedzenie?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Przez słuch",
+        "B": "Przez wzrok i węch",
+        "C": "Przez dotyk",
+        "D": "Przez dźwięk"
+      }
+    },
+    {
+      "id": 25,
+      "category": "easy",
+      "question": "Jak nazywa się młode żółwia?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Larwa",
+        "B": "Mały żółw",
+        "C": "Niemowlę",
+        "D": "Żółwiątko"
+      }
+    },
+    {
+      "id": 26,
+      "category": "easy",
+      "question": "Jakie zwierzęta są naturalnymi wrogami żółwi?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Ptaki drapieżne",
+        "B": "Owady",
+        "C": "Ryby",
+        "D": "Płazy"
+      }
+    },
+    {
+      "id": 27,
+      "category": "easy",
+      "question": "Czy żółwie mogą żyć na lądzie i w wodzie?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Tak, niektóre gatunki",
+        "B": "Nie, tylko na lądzie",
+        "C": "Nie, tylko w wodzie",
+        "D": "To zależy od wieku"
+      }
+    },
+    {
+      "id": 28,
+      "category": "easy",
+      "question": "Jakie jest podstawowe zadanie skorupy żółwia?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Pomaga w oddychaniu",
+        "B": "Pozwala pływać",
+        "C": "Chroni przed drapieżnikami",
+        "D": "Służy jako magazyn wody"
+      }
+    },
+    {
+      "id": 29,
+      "category": "easy",
+      "question": "Jak żółwie widzą świat?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "W czerni i bieli",
+        "B": "W kolorze",
+        "C": "Tylko w nocy",
+        "D": "Tylko w dzień"
+      }
+    },
+    {
+      "id": 30,
+      "category": "easy",
+      "question": "Które części świata zamieszkują żółwie?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Tylko Azję",
+        "B": "Tylko Afrykę",
+        "C": "Tylko Europę",
+        "D": "Większość kontynentów"
+      }
+    },
+    {
+      "id": 31,
+      "category": "easy",
+      "question": "Co żółwie robią zimą?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Polują",
+        "B": "Rozmnażają się",
+        "C": "Zapadają w sen zimowy",
+        "D": "Migrują na południe"
+      }
+    },
+    {
+      "id": 32,
+      "category": "easy",
+      "question": "Jak często żółwie lądowe potrzebują wody?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Codziennie",
+        "B": "Kilka razy w tygodniu",
+        "C": "Raz w tygodniu",
+        "D": "Raz w miesiącu"
+      }
+    },
+    {
+      "id": 33,
+      "category": "easy",
+      "question": "Czy żółwie mogą poruszać się w skorupie?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Tak",
+        "B": "Nie",
+        "C": "Tylko w wodzie",
+        "D": "Tylko na lądzie"
+      }
+    },
+    {
+      "id": 34,
       "category": "normal",
       "question": "Jak długo może żyć żółw galapagos?",
       "correct_answer": "D",
@@ -133,7 +409,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 35,
       "category": "normal",
       "question": "Jakie jest naturalne środowisko życia żółwia stepowego?",
       "correct_answer": "B",
@@ -145,7 +421,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 36,
       "category": "normal",
       "question": "Ile razy w roku żółwie składają jaja?",
       "correct_answer": "C",
@@ -157,7 +433,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 37,
       "category": "normal",
       "question": "Które żółwie są znane z długowieczności?",
       "correct_answer": "A",
@@ -169,7 +445,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 38,
       "category": "normal",
       "question": "Jaka jest największa prędkość, jaką może osiągnąć żółw?",
       "correct_answer": "D",
@@ -181,7 +457,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 39,
       "category": "normal",
       "question": "Który żółw jest największy na świecie?",
       "correct_answer": "C",
@@ -193,7 +469,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 40,
       "category": "normal",
       "question": "Gdzie występuje żółw skórzasty?",
       "correct_answer": "A",
@@ -205,7 +481,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 41,
       "category": "normal",
       "question": "Który organ żółwia pozwala mu na oddychanie pod wodą?",
       "correct_answer": "D",
@@ -217,7 +493,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 42,
       "category": "normal",
       "question": "Który z poniższych żółwi jest zagrożony wyginięciem?",
       "correct_answer": "B",
@@ -229,7 +505,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 43,
       "category": "normal",
       "question": "Jakie jest typowe pożywienie żółwi morskich?",
       "correct_answer": "C",
@@ -241,7 +517,283 @@
       }
     },
     {
-      "id": 21,
+      "id": 44,
+      "category": "normal",
+      "question": "Ile lat może żyć żółw lądowy w naturalnym środowisku?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "10-20 lat",
+        "B": "20-50 lat",
+        "C": "50-100 lat",
+        "D": "Ponad 200 lat"
+      }
+    },
+    {
+      "id": 45,
+      "category": "normal",
+      "question": "Czym różnią się żółwie wodne od lądowych?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Kształtem kończyn",
+        "B": "Kolorem skorupy",
+        "C": "Rozmiarem oczu",
+        "D": "Brakiem dzioba"
+      }
+    },
+    {
+      "id": 46,
+      "category": "normal",
+      "question": "Jaka jest podstawowa różnica między skorupą żółwia wodnego a lądowego?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Kolor",
+        "B": "Grubość i waga",
+        "C": "Gładkość powierzchni",
+        "D": "Kształt otworu na głowę"
+      }
+    },
+    {
+      "id": 47,
+      "category": "normal",
+      "question": "Jak żółwie oddychają podczas hibernacji?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Nie oddychają w ogóle",
+        "B": "Przez nos",
+        "C": "Przez płuca",
+        "D": "Przez skórę i błony śluzowe"
+      }
+    },
+    {
+      "id": 48,
+      "category": "normal",
+      "question": "Co jest podstawowym źródłem witaminy D dla żółwi?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Światło słoneczne",
+        "B": "Woda",
+        "C": "Pokarm roślinny",
+        "D": "Pokarm mięsny"
+      }
+    },
+    {
+      "id": 49,
+      "category": "normal",
+      "question": "Jakie temperatury są optymalne dla żółwi lądowych?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "15-20°C",
+        "B": "20-25°C",
+        "C": "25-30°C",
+        "D": "30-35°C"
+      }
+    },
+    {
+      "id": 50,
+      "category": "normal",
+      "question": "Co należy podać żółwiowi przy podejrzeniu niedoboru wapnia?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Wodę z witaminami",
+        "B": "Pokarm wzbogacony w wapń",
+        "C": "Tłuste ryby",
+        "D": "Świeże owoce"
+      }
+    },
+    {
+      "id": 51,
+      "category": "normal",
+      "question": "Jak żółwie wodne regulują temperaturę ciała?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Poprzez pocenie się",
+        "B": "Poprzez zmiany w metabolizmie",
+        "C": "Poprzez wytwarzanie ciepła w skorupie",
+        "D": "Poprzez przebywanie w słońcu lub wodzie"
+      }
+    },
+    {
+      "id": 52,
+      "category": "normal",
+      "question": "Dlaczego żółwie czasem zakopują się w ziemi?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Aby odpocząć",
+        "B": "Aby szukać pożywienia",
+        "C": "Aby chronić się przed ekstremalnymi temperaturami",
+        "D": "Aby oszukać drapieżników"
+      }
+    },
+    {
+      "id": 53,
+      "category": "normal",
+      "question": "Jakie znaczenie ma wilgotność w środowisku żółwi lądowych?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Wpływa na stan skóry i oddychanie",
+        "B": "Zwiększa ich aktywność",
+        "C": "Umożliwia hibernację",
+        "D": "Nie ma większego znaczenia"
+      }
+    },
+    {
+      "id": 54,
+      "category": "normal",
+      "question": "Jakie elementy powinny znajdować się w terrarium żółwia lądowego?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Piasek i kamienie",
+        "B": "Głębokie akwarium z wodą",
+        "C": "Podłoże, schronienie i lampy grzewcze",
+        "D": "Tylko miska z wodą"
+      }
+    },
+    {
+      "id": 55,
+      "category": "normal",
+      "question": "Dlaczego żółwie potrzebują promieni UVB?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Aby produkować witaminę C",
+        "B": "Aby produkować witaminę D3",
+        "C": "Aby wchłaniać wapń z pożywienia",
+        "D": "Aby utrzymywać aktywność fizyczną"
+      }
+    },
+    {
+      "id": 56,
+      "category": "normal",
+      "question": "Co jest głównym składnikiem diety żółwi lądowych?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Rośliny i warzywa",
+        "B": "Ryby i owady",
+        "C": "Owoce",
+        "D": "Nasiona i orzechy"
+      }
+    },
+    {
+      "id": 57,
+      "category": "normal",
+      "question": "Jaka część skorupy żółwia jest najbardziej narażona na urazy?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Grzbiet",
+        "B": "Boki skorupy",
+        "C": "Dolna część (plastron)",
+        "D": "Krawędzie skorupy"
+      }
+    },
+    {
+      "id": 58,
+      "category": "normal",
+      "question": "W jakim wieku żółwie osiągają dojrzałość płciową?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "2-3 lata",
+        "B": "5-7 lat",
+        "C": "10-15 lat",
+        "D": "20 lat i więcej"
+      }
+    },
+    {
+      "id": 59,
+      "category": "normal",
+      "question": "Jakie są objawy niedoboru witaminy A u żółwi?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Osłabienie skorupy",
+        "B": "Obrzęk oczu i trudności w oddychaniu",
+        "C": "Zahamowanie wzrostu",
+        "D": "Utrata apetytu"
+      }
+    },
+    {
+      "id": 60,
+      "category": "normal",
+      "question": "Co jest zalecane przy problemach z odwodnieniem u żółwi?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Ciepła kąpiel w płytkiej wodzie",
+        "B": "Zwiększenie ilości pokarmu",
+        "C": "Ekspozycja na słońce",
+        "D": "Dodanie piasku do środowiska"
+      }
+    },
+    {
+      "id": 61,
+      "category": "normal",
+      "question": "Dlaczego żółwie lądowe wymagają regularnego dostępu do wody?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Aby się ochłodzić",
+        "B": "Aby nawilżać skorupę",
+        "C": "Aby zapobiegać odwodnieniu i wspomagać trawienie",
+        "D": "Aby pobierać sole mineralne"
+      }
+    },
+    {
+      "id": 62,
+      "category": "normal",
+      "question": "Jakie drapieżniki najczęściej zagrażają żółwiom lądowym w ich naturalnym środowisku?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Ptaki wodne",
+        "B": "Ssaki i ptaki drapieżne",
+        "C": "Ryby i płazy",
+        "D": "Inne żółwie"
+      }
+    },
+    {
+      "id": 63,
+      "category": "normal",
+      "question": "Co robić, gdy żółw odmawia jedzenia przez kilka dni?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Zwiększyć ilość światła",
+        "B": "Zmienić podłoże",
+        "C": "Zapewnić mu więcej cienia",
+        "D": "Skonsultować się z weterynarzem"
+      }
+    },
+    {
+      "id": 64,
+      "category": "normal",
+      "question": "Jaki rodzaj pożywienia może być szkodliwy dla żółwi lądowych?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Świeże warzywa",
+        "B": "Owoce",
+        "C": "Produkty zawierające dużo fosforu",
+        "D": "Liście sałaty"
+      }
+    },
+    {
+      "id": 65,
+      "category": "normal",
+      "question": "Jak rozpoznać, że żółw jest zdrowy?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Aktywność, jasne oczy i twarda skorupa",
+        "B": "Jasna skorupa i brak aktywności",
+        "C": "Brak wydzielin z nosa",
+        "D": "Czyste łapy i brak śladów na skorupie"
+      }
+    },
+    {
+      "id": 66,
+      "category": "normal",
+      "question": "Dlaczego zaleca się regularne czyszczenie terrarium żółwia?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Aby żółw miał świeże powietrze",
+        "B": "Aby zapobiec rozwojowi bakterii i grzybów",
+        "C": "Aby poprawić wygląd środowiska",
+        "D": "Aby uniknąć nadmiernego zapachu"
+      }
+    },
+    {
+      "id": 67,
       "category": "hard",
       "question": "Ile gatunków żółwi istnieje na świecie?",
       "correct_answer": "D",
@@ -253,7 +805,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 68,
       "category": "hard",
       "question": "Jaki jest średni czas inkubacji jaj żółwi morskich?",
       "correct_answer": "A",
@@ -265,7 +817,7 @@
       }
     },
     {
-      "id": 23,
+      "id": 69,
       "category": "hard",
       "question": "Jak nazywa się proces, w którym żółwie wędrują na plaże w celu złożenia jaj?",
       "correct_answer": "C",
@@ -277,7 +829,7 @@
       }
     },
     {
-      "id": 24,
+      "id": 70,
       "category": "hard",
       "question": "Jakiej temperatury wymaga inkubacja jaj żółwi?",
       "correct_answer": "B",
@@ -289,7 +841,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 71,
       "category": "hard",
       "question": "Który gatunek żółwia jest największym mięsożercą?",
       "correct_answer": "C",
@@ -301,7 +853,7 @@
       }
     },
     {
-      "id": 26,
+      "id": 72,
       "category": "hard",
       "question": "Jaka jest największa długość żółwia skórzastego?",
       "correct_answer": "A",
@@ -313,7 +865,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 73,
       "category": "hard",
       "question": "Jaka jest maksymalna głębokość, na jaką mogą zanurzyć się żółwie morskie?",
       "correct_answer": "D",
@@ -325,7 +877,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 74,
       "category": "hard",
       "question": "Jak nazywa się stan, w którym żółwie wpadają w sen zimowy?",
       "correct_answer": "C",
@@ -337,7 +889,7 @@
       }
     },
     {
-      "id": 29,
+      "id": 75,
       "category": "hard",
       "question": "Który z żółwi ma skorupę pokrytą skórą, a nie łuskami?",
       "correct_answer": "C",
@@ -349,7 +901,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 76,
       "category": "hard",
       "question": "Jaka jest średnia długość życia żółwia skórzastego?",
       "correct_answer": "B",
@@ -358,6 +910,282 @@
         "B": "70 lat",
         "C": "40 lat",
         "D": "30 lat"
+      }
+    },
+    {
+      "id": 77,
+      "category": "hard",
+      "question": "Jak rozpoznać niedobór wapnia u żółwi lądowych?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Zmiękczenie skorupy i deformacje",
+        "B": "Utrata apetytu",
+        "C": "Zmniejszenie aktywności",
+        "D": "Obrzęk oczu"
+      }
+    },
+    {
+      "id": 78,
+      "category": "hard",
+      "question": "Jaka jest optymalna wilgotność dla żółwi lądowych w terrarium?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "20-30%",
+        "B": "40-50%",
+        "C": "60-70%",
+        "D": "80-90%"
+      }
+    },
+    {
+      "id": 79,
+      "category": "hard",
+      "question": "Jak często należy wymieniać podłoże w terrarium żółwia?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Raz w miesiącu",
+        "B": "Co 2-3 miesiące lub częściej w razie potrzeby",
+        "C": "Raz na pół roku",
+        "D": "Nie jest to konieczne, jeśli podłoże wygląda czysto"
+      }
+    },
+    {
+      "id": 80,
+      "category": "hard",
+      "question": "Jakie są objawy metabolicznej choroby kości u żółwi?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Zmiana koloru skorupy",
+        "B": "Problemy z poruszaniem się",
+        "C": "Osłabienie mięśni",
+        "D": "Deformacja skorupy i miękkie kości"
+      }
+    },
+    {
+      "id": 81,
+      "category": "hard",
+      "question": "Jakie skutki dla żółwi ma nadmierna ekspozycja na światło UVB?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Brak apetytu",
+        "B": "Problemy ze wzrokiem",
+        "C": "Poparzenia skóry i oczu",
+        "D": "Zmniejszona aktywność"
+      }
+    },
+    {
+      "id": 82,
+      "category": "hard",
+      "question": "Jak żółwie wodne kontrolują poziom soli w organizmie?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Przez specjalne gruczoły solne",
+        "B": "Przez nerki o zwiększonej wydajności",
+        "C": "Przez oddychanie pod wodą",
+        "D": "Przez skórę"
+      }
+    },
+    {
+      "id": 83,
+      "category": "hard",
+      "question": "Jakie pożywienie jest najbardziej niebezpieczne dla żółwi lądowych?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Cebula i czosnek",
+        "B": "Mięso",
+        "C": "Produkty mleczne",
+        "D": "Wszystkie powyższe"
+      }
+    },
+    {
+      "id": 84,
+      "category": "hard",
+      "question": "Co może być przyczyną obrzęku kończyn u żółwia?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Nadmierna wilgotność w terrarium",
+        "B": "Niewydolność nerek",
+        "C": "Niedobór witamin",
+        "D": "Zakażenie bakteryjne"
+      }
+    },
+    {
+      "id": 85,
+      "category": "hard",
+      "question": "W jakiej temperaturze żółwie lądowe zapadają w sen zimowy?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "0-2°C",
+        "B": "10-12°C",
+        "C": "5-8°C",
+        "D": "15-18°C"
+      }
+    },
+    {
+      "id": 86,
+      "category": "hard",
+      "question": "Dlaczego niektóre gatunki żółwi nie powinny zimować w warunkach domowych?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Ze względu na brak odpowiedniego sprzętu",
+        "B": "Z powodu zbyt dużej aktywności",
+        "C": "Ze względu na konieczność specjalnej diety",
+        "D": "Ponieważ nie wszystkie gatunki są przystosowane do hibernacji"
+      }
+    },
+    {
+      "id": 87,
+      "category": "hard",
+      "question": "Jakie minerały są kluczowe dla zdrowego wzrostu skorupy żółwia?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Wapń i fosfor",
+        "B": "Sód i potas",
+        "C": "Magnez i cynk",
+        "D": "Żelazo i miedź"
+      }
+    },
+    {
+      "id": 88,
+      "category": "hard",
+      "question": "Co jest najczęstszą przyczyną infekcji układu oddechowego u żółwi?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Zła dieta",
+        "B": "Zanieczyszczone podłoże",
+        "C": "Zbyt niska temperatura otoczenia",
+        "D": "Brak światła UVB"
+      }
+    },
+    {
+      "id": 89,
+      "category": "hard",
+      "question": "Jakie warunki muszą być spełnione, aby żółwie mogły składać jaja?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Optymalna temperatura i wilgotność",
+        "B": "Dostęp do odpowiedniego podłoża",
+        "C": "Zdrowa dieta przed i w trakcie składania jaj",
+        "D": "Wszystkie powyższe"
+      }
+    },
+    {
+      "id": 90,
+      "category": "hard",
+      "question": "Jakie są skutki braku odpowiedniego oświetlenia UVB dla żółwia?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Zwiększona agresja",
+        "B": "Niedobór witaminy D3 i problemy z wapniem",
+        "C": "Utrata wzroku",
+        "D": "Przyspieszenie metabolizmu"
+      }
+    },
+    {
+      "id": 91,
+      "category": "hard",
+      "question": "Jakie są typowe objawy pasożytów wewnętrznych u żółwi?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Utrata masy ciała i biegunka",
+        "B": "Zmiękczenie skorupy",
+        "C": "Brak reakcji na bodźce",
+        "D": "Problemy z oddychaniem"
+      }
+    },
+    {
+      "id": 92,
+      "category": "hard",
+      "question": "Jak często należy oferować żółwiom suplementy diety?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Raz w tygodniu",
+        "B": "Codziennie",
+        "C": "W zależności od wieku i stanu zdrowia",
+        "D": "Nie są konieczne przy odpowiedniej diecie"
+      }
+    },
+    {
+      "id": 93,
+      "category": "hard",
+      "question": "Który z poniższych składników diety jest szkodliwy dla żółwi lądowych?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Liście mniszka lekarskiego",
+        "B": "Suszone siano",
+        "C": "Skórki ogórków",
+        "D": "Produkty przetworzone, jak chleb czy ciastka"
+      }
+    },
+    {
+      "id": 94,
+      "category": "hard",
+      "question": "Jakie czynniki mogą prowadzić do zatrucia pokarmowego u żółwi?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "Niedobór wapnia w diecie",
+        "B": "Spożycie zgniłego lub spleśniałego jedzenia",
+        "C": "Zbyt częste karmienie",
+        "D": "Brak różnorodności w diecie"
+      }
+    },
+    {
+      "id": 95,
+      "category": "hard",
+      "question": "Dlaczego ważne jest regularne czyszczenie oczu żółwia wodnego?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "Aby zapobiec infekcji skóry",
+        "B": "Aby utrzymać czystość akwarium",
+        "C": "Aby zapobiec infekcjom bakteryjnym oczu",
+        "D": "Aby zwiększyć nawilżenie oczu"
+      }
+    },
+    {
+      "id": 96,
+      "category": "hard",
+      "question": "Jakiego materiału nie należy używać jako podłoża w terrarium żółwia?",
+      "correct_answer": "A",
+      "answers": {
+        "A": "Piasku z drobnymi kamykami",
+        "B": "Mieszanki gleby i torfu",
+        "C": "Kory drzewnej",
+        "D": "Podłoża kokosowego"
+      }
+    },
+    {
+      "id": 97,
+      "category": "hard",
+      "question": "Jak długo żółwie mogą pozostawać bez jedzenia w czasie hibernacji?",
+      "correct_answer": "B",
+      "answers": {
+        "A": "1-2 tygodnie",
+        "B": "Kilka miesięcy",
+        "C": "Zależy od wilgotności terrarium",
+        "D": "Do roku"
+      }
+    },
+    {
+      "id": 98,
+      "category": "hard",
+      "question": "Co należy zrobić w przypadku zauważenia złamania skorupy u żółwia?",
+      "correct_answer": "D",
+      "answers": {
+        "A": "Nic, skorupa sama się zagoi",
+        "B": "Przykleić skorupę taśmą",
+        "C": "Umieścić żółwia w ciemnym miejscu",
+        "D": "Skonsultować się z weterynarzem specjalizującym się w gadach"
+      }
+    },
+    {
+      "id": 99,
+      "category": "hard",
+      "question": "Jaką temperaturę powinno mieć miejsce do wygrzewania się żółwia lądowego?",
+      "correct_answer": "C",
+      "answers": {
+        "A": "20-25°C",
+        "B": "25-30°C",
+        "C": "30-35°C",
+        "D": "35-40°C"
       }
     }
   ]

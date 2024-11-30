@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.projekt3.R
@@ -43,7 +44,11 @@ open class Baseactivity : Notifications() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.transparent)
         applyTheme()
         setContentView(R.layout.activity_base)
-
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                // Blokowanie przycisku Wstecz
+            }
+        })
         val avatar = findViewById<ImageView>(R.id.avatar_image)
 
         val avatar_background =
@@ -82,7 +87,11 @@ open class Baseactivity : Notifications() {
         }
         createTurtleArrays(this)
     }
-
+    @SuppressLint("MissingSuperCall")
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        // Nic nie rób, aby zablokować cofanie
+    }
     fun setViewMode(title: String, levelV: Int=0, toolbarV: Boolean = true, navigationV: Boolean = true) {
         titlemain.text = title
         val level = db.baza_pobierz("gry", "level").toString().toInt()

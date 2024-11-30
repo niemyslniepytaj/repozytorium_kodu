@@ -55,6 +55,7 @@ class GamesContentFragment : Fragment() {
     private var currentBar: Int = 0
     private var mainView: View? = null
     private var correct: String = ""
+    private var end = false
     private lateinit var db: DatabaseHelper
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -83,7 +84,10 @@ class GamesContentFragment : Fragment() {
         val image = view.findViewById<ImageView>(R.id.imageView7)
         val back = view.findViewById<TextView>(R.id.textView16)
         back.setOnClickListener {
-            endGame(true)
+            if (!end) {
+                endGame(true)
+            }
+
         }
         buttonA = view.findViewById(R.id.button)
         buttonB = view.findViewById(R.id.button2)
@@ -120,6 +124,7 @@ class GamesContentFragment : Fragment() {
     }
 
     fun endGame(user_end: Boolean) {
+        end = true
         stopCountdown()
         next = false
         clean()
@@ -486,6 +491,7 @@ class GamesContentFragment : Fragment() {
         val titleView = TextView(requireContext()).apply {
             text = title
             textSize = 24f
+            setTextColor(Color.BLACK)
             setBackgroundResource(R.drawable.x_dialog_header)
             setPadding(40, 40, 40, 40)
             gravity = Gravity.CENTER
