@@ -72,6 +72,7 @@ class InfoturtleFragment : Fragment() {
                     setMargins(0, 24, 0, 24)
                 }
                 text = buttonText
+                setTextAppearance(R.style.ButtonTextStyle)
                 setBackgroundResource(R.drawable.x_info_buttons)
                 setOnClickListener {
                     info(buttonText)

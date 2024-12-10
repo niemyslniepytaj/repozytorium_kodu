@@ -4,7 +4,7 @@
         android:bottomLeftRadius="32dp"
         android:topLeftRadius="32dp" />
     <gradient
-        android:endColor="?attr/colorOnPrimary"
+        android:endColor="?attr/colorSecondary"
         android:startColor="?attr/colorPrimary" />
     <stroke
         android:width="5dp"

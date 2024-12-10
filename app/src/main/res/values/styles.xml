@@ -130,7 +130,9 @@
         <item name="android:layout_marginRight">5dp</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
-
+    <style name="ButtonTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
     <style name="TabLayout_style" parent="Widget.Design.TabLayout">
         <!-- Kolor dla wybranego tab'a -->
         <item name="tabIndicatorColor">?attr/colorSecondary</item> <!-- Kolor podkreślenia -->

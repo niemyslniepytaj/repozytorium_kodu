@@ -139,6 +139,7 @@ class GamesFragment : Fragment() {
         builder.setCustomTitle(titleView)
         val messageView = TextView(context).apply {
             text = formattedDescription
+            setTextColor(Color.WHITE)
             setPadding(50, 20, 16, 16)
             textSize = 16f
         }
