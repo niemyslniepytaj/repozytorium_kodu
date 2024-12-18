@@ -151,5 +151,9 @@
         <!-- Przeniesienie podkreślenia nad tekst -->
         <item name="tabIndicatorGravity">top</item>
     </style>
+    <style name="przyciski" parent="Widget.Material3.MaterialTimePicker.Button">
+        <item name="android:textColor">#C7C7D9</item>
+        <item name="android:strokeColor">#C7C7D9</item>
+    </style>
 
 </resources>

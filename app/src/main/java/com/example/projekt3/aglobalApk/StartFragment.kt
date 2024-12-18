@@ -50,7 +50,7 @@ class StartFragment : Fragment() {
 
         db.baza_wstaw("turtle", "nazwa", "ŻółwiK")
         db.baza_wstaw("turtle", "gatunek", "Żółw Pustynny")
-        db.baza_wstaw("turtle", "karmienie", "18:00")
+        db.baza_wstaw("turtle", "karmienie", "----")
         db.baza_wstaw("turtle", "posiadanie", "Nie")
         db.baza_wstaw("turtle", "avatar", "z_a_niebieski")
         db.baza_wstaw("turtle", "stroke", "Czarny")
@@ -61,7 +61,7 @@ class StartFragment : Fragment() {
         db.baza_wstaw("turtle", "button4", "Morski")
 
         db.baza_wstaw("ustawienia", "current", "0")
-        db.baza_wstaw("ustawienia", "powiadomienia", "1")
+        db.baza_wstaw("ustawienia", "powiadomienia", "2")
         db.baza_wstaw("ustawienia", "description", "Powiadomienia przypominające o karmieniu żółwia o ustalonej godzinie.")
         db.baza_wstaw("ustawienia", "powiadomieniaonoff", "1")
         db.baza_wstaw("ustawienia", "powiadomienia1", "-1")

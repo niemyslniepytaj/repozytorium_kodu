@@ -27,7 +27,7 @@ class DatabaseHelper(context: Context) :
     }
 
     companion object {
-        private const val DATABASE_VERSION = 9
+        private const val DATABASE_VERSION = 11
         private const val DATABASE_NAME = "MyDatabase.db"
 
         // Nazwy tabel

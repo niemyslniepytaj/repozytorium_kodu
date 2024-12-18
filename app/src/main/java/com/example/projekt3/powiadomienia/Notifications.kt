@@ -103,7 +103,7 @@ open class Notifications : AppCompatActivity() {
         }
     }
 
-    // Tworzenie kanału powiadomień
+
     // Tworzenie kanału powiadomień dla Androida 8.0 i wyższych
     private fun createNotificationChannel(channelID: String) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

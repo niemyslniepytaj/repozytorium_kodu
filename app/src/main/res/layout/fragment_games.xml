@@ -44,7 +44,7 @@
 
                 <Button
                     android:id="@+id/button15"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -52,7 +52,8 @@
 
                 <Button
                     android:id="@+id/button16"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -97,16 +98,15 @@
 
                 <Button
                     android:id="@+id/button17"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Info"
-                    android:textColor="@color/m3_timepicker_button_text_color" />
+                    android:text="Info" />
 
                 <Button
                     android:id="@+id/button18"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -170,7 +170,7 @@
 
                 <Button
                     android:id="@+id/button19"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -178,7 +178,7 @@
 
                 <Button
                     android:id="@+id/button20"
-                    style="@style/Widget.Material3.MaterialTimePicker.Button"
+                    style="@style/przyciski"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"

@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.annotation.Dimension
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.projekt3.R
@@ -185,7 +186,7 @@ open class Baseactivity : Notifications() {
         transaction.commit()
     }
 
-    fun setup_avatar(avatar: ImageView, avatar_background: LayerDrawable?) {
+    fun setup_avatar(avatar: ImageView, avatar_background: LayerDrawable?,strokewidthavatar:Boolean = false) {
         val image = db.baza_pobierz("turtle", "avatar")
         val stroke = db.baza_pobierz("turtle", "stroke")
         val tlo = db.baza_pobierz("turtle", "tlo")
@@ -205,7 +206,12 @@ open class Baseactivity : Notifications() {
             "Złoty" -> ContextCompat.getColor(this, R.color.golden_color)
             else -> ContextCompat.getColor(this, R.color.purple)
         }
-        val strokeWidth = resources.getDimensionPixelSize(R.dimen.avatar_stroke_width_2)
+        val strokeWidth: Int = if(strokewidthavatar){
+            resources.getDimensionPixelSize(R.dimen.avatar_stroke_width)
+        }else{
+            resources.getDimensionPixelSize(R.dimen.avatar_stroke_width_2)
+        }
+        val strokeWidth2 = resources.getDimensionPixelSize(R.dimen.avatar_stroke_width_2)
 
         avatar_background?.let {
             val strokeLayer = it.getDrawable(1) as GradientDrawable
@@ -215,15 +221,13 @@ open class Baseactivity : Notifications() {
         val layerDrawable = toolbarlevel.background as LayerDrawable
 
         layerDrawable.let {
-            // Pobierz warstwę, która zawiera stroke (to jest druga warstwa w twoim przypadku, więc indeks 1)
             val strokeLayer = it.getDrawable(1) as GradientDrawable
-
-            strokeLayer.setStroke(strokeWidth, strokeColor)
+            strokeLayer.setStroke(strokeWidth2, strokeColor)
         }
         toolbar.background.let { background ->
             // Sprawdzenie czy tło toolbaru jest typu GradientDrawable
             val strokeLayer = background as GradientDrawable
-            strokeLayer.setStroke(strokeWidth, strokeColor)
+            strokeLayer.setStroke(strokeWidth2, strokeColor)
         }
     }
 
@@ -276,6 +280,9 @@ open class Baseactivity : Notifications() {
             }
             "E" -> {
                 setTheme(R.style.Theme_E)
+            }
+            "F" -> {
+                setTheme(R.style.Theme_F)
             }
         }
     }

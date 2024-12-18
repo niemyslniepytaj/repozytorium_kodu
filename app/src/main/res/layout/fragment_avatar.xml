@@ -96,7 +96,7 @@
 
                     <Button
                         android:id="@+id/button4"
-                        style="@style/Widget.Material3.MaterialTimePicker.Button"
+                        style="@style/przyciski"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -124,7 +124,7 @@
 
                     <Button
                         android:id="@+id/button10"
-                        style="@style/Widget.Material3.MaterialTimePicker.Button"
+                        style="@style/przyciski"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -151,7 +151,7 @@
 
                     <Button
                         android:id="@+id/button5"
-                        style="@style/Widget.Material3.MaterialTimePicker.Button"
+                        style="@style/przyciski"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -177,7 +177,7 @@
 
                     <Button
                         android:id="@+id/button11"
-                        style="@style/Widget.Material3.MaterialTimePicker.Button"
+                        style="@style/przyciski"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -199,7 +199,7 @@
 
             <Button
                 android:id="@+id/button13"
-                style="@style/Widget.Material3.MaterialTimePicker.Button"
+                style="@style/przyciski"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"

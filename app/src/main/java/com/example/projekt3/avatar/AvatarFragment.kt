@@ -15,9 +15,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.example.projekt3.R
 import com.example.projekt3.aglobalApk.Baseactivity
 import com.example.projekt3.aglobalApk.DatabaseHelper
-import com.example.projekt3.R
 import com.example.projekt3.games.GamesFragment
 import com.example.projekt3.home.MainFragment
 import com.example.projekt3.info.InfoturtleFragment
@@ -45,14 +45,16 @@ class AvatarFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        (activity as Baseactivity).setViewMode("Edytuj avatar",0,true,false)
+        (activity as Baseactivity).setViewMode("Edytuj avatar", 0, true, false)
 
 
         level = db.baza_pobierz("gry", "level").toString().toInt()
         val avatar_image = view.findViewById<ImageView>(R.id.avatar_image_pre)
-        val avatar_background = view.findViewById<View>(R.id.avatar_background_pre).background as LayerDrawable
+        val avatar_background =
+            view.findViewById<View>(R.id.avatar_background_pre).background as LayerDrawable
         val final_image = requireActivity().findViewById<ImageView>(R.id.avatar_image)
-        val final_background = requireActivity().findViewById<View>(R.id.avatar_background).background as LayerDrawable
+        val final_background =
+            requireActivity().findViewById<View>(R.id.avatar_background).background as LayerDrawable
 
         val modelbutton = view.findViewById<Button>(R.id.button4)
         val kolorbutton = view.findViewById<Button>(R.id.button10)
@@ -100,7 +102,7 @@ class AvatarFragment : Fragment() {
         tlobutton.setOnClickListener {
             avatar_preview_background(tlobutton, avatar_image)
         }
-        (activity as Baseactivity).setup_avatar(avatar_image, avatar_background)
+        (activity as Baseactivity).setup_avatar(avatar_image, avatar_background,true)
         submitbutton.setOnClickListener {
             val a = db.baza_pobierz("avatar", "avatar")
             val b = db.baza_pobierz("avatar", "stroke")
@@ -116,6 +118,7 @@ class AvatarFragment : Fragment() {
             db.baza_wstaw("turtle", "avatar", a.toString())
             db.baza_wstaw("turtle", "stroke", b.toString())
             db.baza_wstaw("turtle", "tlo", c.toString())
+
             (activity as Baseactivity).setup_avatar(final_image, final_background)
             tlobutton.setTextColor(
                 ContextCompat.getColor(
@@ -226,9 +229,10 @@ class AvatarFragment : Fragment() {
         // Wyświetlenie dialogu i oczekiwanie na wybór użytkownika
         showOptionsDialog(title, finaloptions.toTypedArray()) { selectedOption ->
 
-            val option_selected =(activity as Baseactivity).removePolishChars(selectedOption.lowercase())
+            val option_selected =
+                (activity as Baseactivity).removePolishChars(selectedOption.lowercase())
 
-            var bnd=""
+            var bnd = ""
             if (choose == "model") {
                 bnd = "z_${option_selected}_${color}"
                 db.baza_wstaw("avatar", "model", option_selected)
@@ -270,9 +274,14 @@ class AvatarFragment : Fragment() {
             tloOptions.toTypedArray()
         ) { selectedOption ->
 
-            val option_selected = (activity as Baseactivity).removePolishChars(selectedOption.lowercase())
+            val option_selected =
+                (activity as Baseactivity).removePolishChars(selectedOption.lowercase())
 
-            val resourceId = resources.getIdentifier("z_tlo_$option_selected", "drawable", requireContext().packageName)
+            val resourceId = resources.getIdentifier(
+                "z_tlo_$option_selected",
+                "drawable",
+                requireContext().packageName
+            )
             avatar.setBackgroundResource(resourceId)
 
             button.text = selectedOption

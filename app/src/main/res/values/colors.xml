@@ -26,15 +26,20 @@
     <color name="E_secondary">#005DA8</color>
     <color name="E_secondary_shadow">#0070CC</color>
 
+    <color name="F_primary">#475A70</color>
+    <color name="F_primary_shadow">#7595BA</color>
+    <color name="F_secondary">#526882</color>
+    <color name="F_secondary_shadow">#627D9C</color>
+
     <color name="red">#FF0000</color>
-    <color name="czerwony">#FF1744</color>
+    <color name="czerwony">#FF0000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="niebieski">#3D5AFE</color>
+    <color name="niebieski">#0089FA</color>
     <color name="golden_color">#FFAF00</color>
     <color name="button_default_text">#60E6E0E9</color>
-    <color name="purple">#780AA0</color>
-    <color name="orange">#F86402</color>
+    <color name="purple">#A100CC</color>
+    <color name="orange">#EB7500</color>
     <color name="pink">#F802EC</color>
     <color name="green">#07CD00</color>
     <color name="transparent">#00F44336</color>

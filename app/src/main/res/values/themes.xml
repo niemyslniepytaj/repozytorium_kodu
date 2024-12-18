@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Ciemny" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">#035209</item>
+
     </style>
 
     <style name="Theme.A" parent="Base.Theme.Ciemny">
@@ -48,5 +49,14 @@
         <item name="colorOnPrimary">@color/E_primary_shadow</item>
         <item name="colorSecondary">@color/E_secondary</item>
         <item name="colorOnSecondary">@color/E_secondary_shadow</item>
+    </style>
+    <style name="Theme.F" parent="Base.Theme.Ciemny">
+        <item name="colorControlActivated">@color/F_secondary_shadow</item>
+        <item name="colorControlHighlight">@color/F_secondary_shadow</item>
+        <item name="checkedButton">@color/F_secondary_shadow</item>
+        <item name="colorPrimary">@color/F_primary</item>
+        <item name="colorOnPrimary">@color/F_primary_shadow</item>
+        <item name="colorSecondary">@color/F_secondary</item>
+        <item name="colorOnSecondary">@color/F_secondary_shadow</item>
     </style>
 </resources>
