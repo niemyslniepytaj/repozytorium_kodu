@@ -365,7 +365,7 @@ class SettingsFragment : Fragment() {
             gravity = Gravity.CENTER
             setTypeface(null, Typeface.BOLD)
         }
-        val options = arrayOf("Zielony", "Fioletowy","Jasnoniebieski", "Pomarańczowy","Niebieski","Wysoki kontrast")
+        val options = arrayOf("Zielony", "Fioletowy","Jasnoniebieski", "Pomarańczowy","Niebieski","Dostępny")
         val dialog = AlertDialog.Builder(requireContext())
             .setCustomTitle(titleView)
             .setItems(options) { _, which ->
@@ -388,7 +388,7 @@ class SettingsFragment : Fragment() {
                     "Niebieski" -> {
                         editor.putString("selectedTheme", "E")
                     }
-                    "Wysoki kontrast" ->{
+                    "Dostępny" ->{
                         editor.putString("selectedTheme", "F")
                     }
                 }
