@@ -8,6 +8,7 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 
 2. **Zainstaluj aplikację**  
    Zainstaluj aplikację na urządzeniu z minimalną wersją systemu Android **10**.
+[Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik.apk)
 
 3. **Zaakceptuj ostrzeżenie**  
    Jeśli system wyświetli powiadomienie o zagrożeniu związanym z aplikacją pochodzącą z nieautoryzowanego źródła, zaakceptuj instalację.
