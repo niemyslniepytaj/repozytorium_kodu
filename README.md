@@ -1,4 +1,4 @@
-# To jest repozytorium kodu aplikacji ŻółwiK
+# Repozytorium kodu aplikacji ŻółwiK
 
    Repozytorium kodu zawiera pliki źródłowe, pliki instalacyjne aplikacji i screencasty z aplikacji.
 
@@ -30,5 +30,5 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 ## Screencasty aplikacji
 
 1. **Samouczek**
-   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik-dev.apk)
+   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/samouczek.mp4)
 2. 
