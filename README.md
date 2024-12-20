@@ -28,7 +28,10 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
    Przejdź przez samouczek, który uruchomi się automatycznie po pierwszym uruchomieniu aplikacji.
 
 ## Screencasty aplikacji
-
+<video controls width="600">
+  <source src="https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/samouczek.mp4" type="video/mp4">
+  Twoja przeglądarka nie obsługuje osadzania wideo. [Pobierz wideo](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/videos/my_video.mp4).
+</video>
 1. **Samouczek**
-   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/samouczek.mp4)
+   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/mastersamouczek.mp4)
 2. 
