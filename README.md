@@ -3,12 +3,11 @@
 Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe kroki:
 
 1. **Pobierz plik**  
-   Pobierz plik `aplikacja-zolwik.apk` na swoje urządzenie.
-[Kliknij tutaj, aby pobrać plik aplikacjazolwik](PK)
+   Pobierz plik `aplikacja-zolwik.apk` na swoje urządzenie. [Kliknij tutaj, aby pobrać](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik.apk)
+   Wersja aplikacji z odblokowanymi wszystkimi elementami awatara: [Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik-dev.apk)
 
 2. **Zainstaluj aplikację**  
    Zainstaluj aplikację na urządzeniu z minimalną wersją systemu Android **10**.
-[Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik.apk)
 
 3. **Zaakceptuj ostrzeżenie**  
    Jeśli system wyświetli powiadomienie o zagrożeniu związanym z aplikacją pochodzącą z nieautoryzowanego źródła, zaakceptuj instalację.
