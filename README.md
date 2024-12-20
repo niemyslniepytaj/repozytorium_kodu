@@ -7,7 +7,7 @@
 Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe kroki:
 
 1. **Pobierz plik**  
-   Pobierz plik `aplikacja-zolwik.apk` na swoje urządzenie. [Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik.apk)
+   Pobierz plik `aplikacja-zolwik.apk` na swoje urządzenie. [Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik.apk)*
    
 
    *Wersja aplikacji z odblokowanymi wszystkimi elementami awatara: [Kliknij tutaj, aby pobrać APK](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik-dev.apk)
@@ -28,6 +28,7 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
    Przejdź przez samouczek, który uruchomi się automatycznie po pierwszym uruchomieniu aplikacji.
 
 ## Screencasty aplikacji
-   Nagrania ekranu aplikacji są dostępne pod adresem [https://niemyslniepytaj.github.io/hub/filmy.html](https://niemyslniepytaj.github.io/hub/filmy.html)
+   Nagrania ekranu aplikacji są dostępne pod adresem [https://niemyslniepytaj.github.io/hub/filmy.html](https://niemyslniepytaj.github.io/hub/filmy.html)*
 
+   *Na urządzeniu mobilnym jest lepsza jakość i płynność w stosunku do nagrań.
 
