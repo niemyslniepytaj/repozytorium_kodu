@@ -4,6 +4,7 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 
 1. **Pobierz plik**  
    Pobierz plik `aplikacja-zolwik.apk` na swoje urządzenie.
+[Kliknij tutaj, aby pobrać plik ZIP](https://github.com//niemyslniepytaj/repozytorium_kodu)
 
 2. **Zainstaluj aplikację**  
    Zainstaluj aplikację na urządzeniu z minimalną wersją systemu Android **10**.
