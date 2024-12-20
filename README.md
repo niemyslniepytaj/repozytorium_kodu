@@ -1,3 +1,7 @@
+# To jest repozytorium kodu aplikacji ŻółwiK
+
+   Repozytorium kodu zawiera pliki źródłowe, pliki instalacyjne aplikacji i screencasty z aplikacji.
+
 ## Instalacja aplikacji
 
 Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe kroki:
