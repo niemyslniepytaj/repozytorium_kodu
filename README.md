@@ -32,5 +32,6 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
   <source src="https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/samouczek.mp4" type="video/mp4">
   Twoja przeglądarka nie obsługuje osadzania wideo. [Pobierz wideo](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/samouczek.mp4).
 </video>
+[Odtwórz wideo w przeglądarce](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/samouczek.mp4)
 
 
