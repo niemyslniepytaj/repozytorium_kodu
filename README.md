@@ -34,12 +34,6 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 </video>
 
 
-
-
-
-
-
-
 1. **Samouczek**
    [samouczekssss.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/mastersamouczek.mp4)
 2. 
