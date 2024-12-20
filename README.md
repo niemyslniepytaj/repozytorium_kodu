@@ -30,7 +30,7 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 ## Screencasty aplikacji
 <video controls width="600">
   <source src="https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/samouczek.mp4" type="video/mp4">
-  Twoja przeglądarka nie obsługuje osadzania wideo. [Pobierz wideo](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/my_video.mp4).
+  Twoja przeglądarka nie obsługuje osadzania wideo. [Pobierz wideo](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/samouczek.mp4).
 </video>
 
 
@@ -41,5 +41,5 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 
 
 1. **Samouczek**
-   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/mastersamouczek.mp4)
+   [samouczekssss.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/mastersamouczek.mp4)
 2. 
