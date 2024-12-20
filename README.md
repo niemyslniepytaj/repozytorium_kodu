@@ -31,4 +31,5 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
    Nagrania ekranu aplikacji są dostępne pod adresem [https://niemyslniepytaj.github.io/hub/filmy.html](https://niemyslniepytaj.github.io/hub/filmy.html)*
 
    *Na urządzeniu mobilnym jest lepsza jakość i płynność w stosunku do nagrań.
+   *Nagrania z oznaczeniem (dev) pochodzą z wersji z odblokowanymi wszystkimi elementami awatara bez zdobywania punktów.
 
