@@ -22,3 +22,9 @@ Aby korzystać z pełni funkcjonalności aplikacji, należy wykonać poniższe k
 
 6. **Przejdź samouczek**  
    Przejdź przez samouczek, który uruchomi się automatycznie po pierwszym uruchomieniu aplikacji.
+
+## Screencasty aplikacji
+
+1. **Samouczek**
+   [samouczek.mp4](https://github.com/niemyslniepytaj/repozytorium_kodu/raw/master/app/release/aplikacja-zolwik-dev.apk)
+2. 
