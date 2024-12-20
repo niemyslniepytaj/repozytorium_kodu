@@ -73,11 +73,6 @@ class AvatarFragment : Fragment() {
             }
 
         }
-//        db.baza_wstaw("turtle", "stroke", "Czarny")
-//        db.baza_wstaw("turtle", "avatar", "z_a_fioletowy")
-//        db.baza_wstaw("avatar", "kolor", "fioletowy")
-//        db.baza_wstaw("avatar", "model", "A")
-//        db.baza_wstaw("turtle", "tlo", "z_morski")
 
 
         modelbutton.text = db.baza_pobierz("turtle", "button1").toString()
@@ -153,17 +148,17 @@ class AvatarFragment : Fragment() {
     fun avatar_preview_color(button: Button, avatar: LayerDrawable?) {
         val strokeOptions = arrayListOf("Czarny", "Fioletowy")
 
-        if (level >= 2) strokeOptions.add("Różowy")
-        if (level >= 6) strokeOptions.add("Niebieski")
-        if (level >= 11) strokeOptions.add("Czerwony")
-        if (level >= 15) strokeOptions.add("Pomarańczowy")
-        if (level >= 19) strokeOptions.add("Złoty")
+//        if (level >= 2) strokeOptions.add("Różowy")
+//        if (level >= 6) strokeOptions.add("Niebieski")
+//        if (level >= 11) strokeOptions.add("Czerwony")
+//        if (level >= 15) strokeOptions.add("Pomarańczowy")
+//        if (level >= 19) strokeOptions.add("Złoty")
 
-//        if (level >= 0) strokeOptions.add("Różowy")
-//        if (level >= 0) strokeOptions.add("Niebieski")
-//        if (level >= 0) strokeOptions.add("Czerwony")
-//        if (level >= 0) strokeOptions.add("Pomarańczowy")
-//        if (level >= 0) strokeOptions.add("Złoty")
+        if (level >= 0) strokeOptions.add("Różowy")
+        if (level >= 0) strokeOptions.add("Niebieski")
+        if (level >= 0) strokeOptions.add("Czerwony")
+        if (level >= 0) strokeOptions.add("Pomarańczowy")
+        if (level >= 0) strokeOptions.add("Złoty")
 
 
         // Wyświetlenie dialogu i oczekiwanie na wybór użytkownika
@@ -202,28 +197,28 @@ class AvatarFragment : Fragment() {
         var finaloptions: ArrayList<String>
         if (choose == "model") {
             finaloptions = modelOptions
-            if (level >= 3) finaloptions.add("B")
-            if (level >= 8) finaloptions.add("C")
-            if (level >= 14) finaloptions.add("D")
-            if (level >= 18) finaloptions.add("E")
-//            if (level >= 0) finaloptions.add("B")
-//            if (level >= 0) finaloptions.add("C")
-//            if (level >= 0) finaloptions.add("D")
-//            if (level >= 0) finaloptions.add("E")
+//            if (level >= 3) finaloptions.add("B")
+//            if (level >= 8) finaloptions.add("C")
+//            if (level >= 14) finaloptions.add("D")
+//            if (level >= 18) finaloptions.add("E")
+            if (level >= 0) finaloptions.add("B")
+            if (level >= 0) finaloptions.add("C")
+            if (level >= 0) finaloptions.add("D")
+            if (level >= 0) finaloptions.add("E")
             title = "Wybierz model (${finaloptions.size}/5)"
         } else {
             finaloptions = colorOptions
-            if (level >= 1) finaloptions.add("Pomarańczowy")
-            if (level >= 5) finaloptions.add("Fioletowy")
-            if (level >= 9) finaloptions.add("Żółty")
-            if (level >= 12) finaloptions.add("Czerwony")
-            if (level >= 17) finaloptions.add("Jasnoniebieski")
+//            if (level >= 1) finaloptions.add("Pomarańczowy")
+//            if (level >= 5) finaloptions.add("Fioletowy")
+//            if (level >= 9) finaloptions.add("Żółty")
+//            if (level >= 12) finaloptions.add("Czerwony")
+//            if (level >= 17) finaloptions.add("Jasnoniebieski")
 
-//            if (level >= 0) finaloptions.add("Pomarańczowy")
-//            if (level >= 0) finaloptions.add("Fioletowy")
-//            if (level >= 0) finaloptions.add("Żółty")
-//            if (level >= 0) finaloptions.add("Czerwony")
-//            if (level >= 0) finaloptions.add("Jasnoniebieski")
+            if (level >= 0) finaloptions.add("Pomarańczowy")
+            if (level >= 0) finaloptions.add("Fioletowy")
+            if (level >= 0) finaloptions.add("Żółty")
+            if (level >= 0) finaloptions.add("Czerwony")
+            if (level >= 0) finaloptions.add("Jasnoniebieski")
             title = "Wybierz kolor (${finaloptions.size}/7)"
         }
         val model = db.baza_pobierz("avatar", "model")?.lowercase()
@@ -258,19 +253,19 @@ class AvatarFragment : Fragment() {
     fun avatar_preview_background(button: Button, avatar: ImageView) {
         val tloOptions = arrayListOf("Morski", "Pomarańczowy")
 
-        if (level >= 4) tloOptions.add("Fioletowy")
-        if (level >= 7) tloOptions.add("Wielokolorowy")
-        if (level >= 10) tloOptions.add("Niebieski")
-        if (level >= 13) tloOptions.add("Żółty")
-        if (level >= 16) tloOptions.add("Różowy")
-        if (level >= 20) tloOptions.add("Magiczny")
+//        if (level >= 4) tloOptions.add("Fioletowy")
+//        if (level >= 7) tloOptions.add("Wielokolorowy")
+//        if (level >= 10) tloOptions.add("Niebieski")
+//        if (level >= 13) tloOptions.add("Żółty")
+//        if (level >= 16) tloOptions.add("Różowy")
+//        if (level >= 20) tloOptions.add("Magiczny")
 
-//        if (level >= 0) tloOptions.add("Fioletowy")
-//        if (level >= 0) tloOptions.add("Wielokolorowy")
-//        if (level >= 0) tloOptions.add("Niebieski")
-//        if (level >= 0) tloOptions.add("Żółty")
-//        if (level >= 0) tloOptions.add("Różowy")
-//        if (level >= 0) tloOptions.add("Magiczny")
+        if (level >= 0) tloOptions.add("Fioletowy")
+        if (level >= 0) tloOptions.add("Wielokolorowy")
+        if (level >= 0) tloOptions.add("Niebieski")
+        if (level >= 0) tloOptions.add("Żółty")
+        if (level >= 0) tloOptions.add("Różowy")
+        if (level >= 0) tloOptions.add("Magiczny")
 
         // Wyświetlenie dialogu i oczekiwanie na wybór użytkownika
         showOptionsDialog(
